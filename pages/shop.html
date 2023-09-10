@@ -11,14 +11,14 @@
 
     <aside> <!--Buscador de productos-->
         <div>
-            <label for="buscar">Buscar</label>
+            <h1>Buscar</h1>
             <form action="#">
                 <input type="search" placeholder="item o categoria">
             </form>
         </div>
 
         <div>
-            <label for="ordenar">Ordenar por</label>
+            <h1>Ordenar por</h1>
             <form action="#">
                 <select name="ordenar" id="ordenar">
                     <option value="mayor">Mayor a menor</option>
@@ -28,13 +28,26 @@
         </div>
 
         <div>
-            <label for="precio">Precio</label>
+            <h1>Precio</h1>
             <form action="#">
                 <label for="#">Min</label>
                     <input type="search" placeholder="0" />
-    
-                    <label for="#">Max</label>
+                    <label for="#">- Max</label>
                     <input type="search" placeholder="0" />
+            </form>
+        </div>
+
+        <div> <!--Filtro de productos-->
+            <h1>Filtrar</h1>
+            <form action="#">
+                <input type="checkbox" name="nuevos">
+                <label for="">Nuevos</label>
+                <input type="checkbox">
+                <label for="" name="ofertas">Ofertas</label>
+                <input type="checkbox" name="especial">
+                <label for="">Edicion especial</label>
+                <input type="checkbox" name="favoritos">
+                <label for="">Favoritos</label>
             </form>
         </div>
     </aside>
