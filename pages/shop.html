@@ -3,86 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Shop</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
-   
         <header ><!--inicio header-->
             <nav >
                 <picture >
                     <a href="../index.html" ><img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkoshop" ></a>
-                    
                 </picture>
                 
-                <ul >
+                <ul>
                     <li>
-                        <a href="../pages/shop.html"class="list-shop">SHOP</a></li>
+                        <a href="../pages/shop.html"class="list-shop">SHOP </a></li>
                     <li>
-                        <a href="../pages/contact.html"class="list-contacto">CONTACTO</a></li>
+                        <a href="../pages/contact.html"class="list-contacto">CONTACTO </a></li>
                     <li>
-                        <a href="../pages/login.html"class="list-login">LOGIN</a></li>
+                        <a href="../pages/login.html"class="list-login">LOGIN </a></li>
                     <li>
-                        <a href="../pages/cart.html"class="list-carrito">CARRITO
+                        <a href="../pages/cart.html"class="list-carrito">
                             <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
                         </a>
                     </li>
                 </ul>
             </nav>
-           </header><!--fin header-->
+        </header><!--fin header-->
     
+        <main>
+        
+            <section>
+                <section>
+                    <div class="buscar">
+                        <p>Buscar</p>
+                        <form action="#">
+                            <input type="search" placeholder="item o categoria">
+                        </form>
+                    </div>
+            
+                    <div>
+                        <p>Ordenar por</p>
+                        <form action="#">
+                            <select name="ordenar" id="ordenar">
+                                <option value="mayor">Mayor a menor</option>
+                                <option value="menor">Menor a mayor</option>
+                            </select>
+                        </form>
+                    </div>
+            
+                    <div>
+                        <p>Precio</p>
+                        <form action="#">
+                            <label for="#">Min</label>
+                                <input type="search" placeholder="0" />
+                                <label for="#">- Max</label>
+                                <input type="search" placeholder="0" />
+                        </form>
+                    </div>
+            
+                    <div> <!--Filtro de productos-->
+                        <p>Filtrar</p>
+                        <form action="#">
+                            <input type="checkbox" name="nuevos">
+                            <label for="">Nuevos</label>
+                            <input type="checkbox">
+                            <label for="" name="ofertas">Ofertas</label>
+                            <input type="checkbox" name="especial">
+                            <label for="">Edicion especial</label>
+                            <input type="checkbox" name="favoritos">
+                            <label for="">Favoritos</label>
+                        </form>
+                    </div>
+                </section>
+                <ul class="tienda">
+                    <div class="card" style="width: auto;">
+                        <img src="../img/star-wars/trooper-1.webp" class="imagen1" width="auto" height="auto" alt="Star Wars Trooper">
+                        <div class="card-body">
+                        <p class="card-text">Star Wars Trooper</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: auto;">
+                        <img src="../img/pokemon/pidgeotto-1.webp" class="imagen2" alt="Pidgeotto">
+                        <div class="card-body">
+                        <p class="card-text">Pidgeotto</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: auto;">
+                        <img src="../img/harry-potter/luna-1.webp" class="imagen3" alt="Luna">
+                        <div class="card-body">
+                        <p class="card-text">Luna</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: auto;">
+                        <img src="../img/star-wars/trooper-1.webp" class="imagen4" alt="Star Wars Trooper">
+                        <div class="card-body">
+                        <p class="card-text">Star Wars Trooper</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: auto;">
+                        <img src="../img/pokemon/pidgeotto-1.webp" class="imagen5" alt="Pidgeotto">
+                        <div class="card-body">
+                        <p class="card-text">Pidgeotto</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: auto;">
+                        <img src="../img/harry-potter/luna-1.webp" class="imagen6" alt="Luna">
+                        <div class="card-body">
+                        <p class="card-text">Luna</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: auto;">
+                        <img src="../img/star-wars/trooper-1.webp" class="imagen7" alt="Star Wars Trooper">
+                        <div class="card-body">
+                        <p class="card-text">Star Wars Trooper</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: auto;">
+                        <img src="../img/pokemon/pidgeotto-1.webp" class="imagen8" alt="Pidgeotto">
+                        <div class="card-body">
+                        <p class="card-text">Pidgeotto</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: auto;">
+                        <img src="../img/harry-potter/luna-1.webp" class="imagen9" alt="Luna">
+                        <div class="card-body">
+                        <p class="card-text">Luna</p>
+                        </div>
+                    </div>
+                </ul>
+            </section>
+        </main>
 
+    <main>
 
-    <aside> <!--Buscador de productos-->
-        <div>
-            <h1>Buscar</h1>
-            <form action="#">
-                <input type="search" placeholder="item o categoria">
-            </form>
-        </div>
-
-        <div>
-            <h1>Ordenar por</h1>
-            <form action="#">
-                <select name="ordenar" id="ordenar">
-                    <option value="mayor">Mayor a menor</option>
-                    <option value="menor">Menor a mayor</option>
-                </select>
-            </form>
-        </div>
-
-        <div>
-            <h1>Precio</h1>
-            <form action="#">
-                <label for="#">Min</label>
-                    <input type="search" placeholder="0" />
-                    <label for="#">- Max</label>
-                    <input type="search" placeholder="0" />
-            </form>
-        </div>
-
-        <div> <!--Filtro de productos-->
-            <h1>Filtrar</h1>
-            <form action="#">
-                <input type="checkbox" name="nuevos">
-                <label for="">Nuevos</label>
-                <input type="checkbox">
-                <label for="" name="ofertas">Ofertas</label>
-                <input type="checkbox" name="especial">
-                <label for="">Edicion especial</label>
-                <input type="checkbox" name="favoritos">
-                <label for="">Favoritos</label>
-            </form>
-        </div>
-    </aside>
-
-
-       
-       <main>
-
-       </main>
-        <div class="pagination"> <!--Inicia el indicador de paginas de shop -->
+    </main>
+    <div class="pagination"> <!--Inicia el indicador de paginas de shop -->
         <a href="#">&laquo</a>
         <a href="../index.html">1</a>
         <a href="../pages/shop.html">2</a>
@@ -91,10 +146,10 @@
         <a href="#">5</a>
         <a href="#">6</a>
         <a href="#">&raquo</a>
-      </div><!--fin el indicador de paginas de shop -->
-      <footer><!--inicio footer seccion -->
-            <section>
-                <nav>
+    </div><!--fin el indicador de paginas de shop -->
+
+    <footer><!--inicio footer seccion -->
+                <nav class="piePagina">
                     <ul>
                         <li><a href="../pages/shop.html">SHOP</a></li>
                         <li><a href="../pages/registrar.html">REGISTRARSE</a></li>
@@ -105,8 +160,9 @@
                     <img src="../img/branding/isotype.svg" alt="isotipo de la marca funco.com">
                     </picture>
                 </nav>
-            </section>
             <p></p>
-       </footer><!--fin footer seccion -->
+    </footer><!--fin footer seccion -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>

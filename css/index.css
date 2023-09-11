@@ -48,6 +48,7 @@
 *::after{margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
 }
 html{
     font-family:var(--base-font);
@@ -72,34 +73,64 @@ p{
 }
 
 .container{
-    max-width: 1200px;
+
     margin: 0 auto;
 }
 header nav{
-    
-  
     background-color:var(--dark-bg-solid);
-    width: 1440px;
-    height: 144px;
+    width: auto;
+    height: auto;
 }
 header nav picture{
-    display: inline-block;
-    width: 372px;
-    height: 65.19px;
-    margin-top: 39px;
-   margin-left: 110px;
-    
+    display: flex;
+    width: auto;
+    height: auto;
+
 }
 
 header nav ul{
-    display: inline-block;
-    width: 406px;
-   
-    margin-left: 524px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
 }
 header nav ul li{
+
     position: relative;
-    display: inline-block;
-    top: -25px;
+    display: flex;
+    margin: 5px;
     padding: 5px;
-   }
+
+}
+
+.piePagina{
+    color: black;
+}
+
+
+
+
+/* SHOP CSS */
+
+.buscar{
+    align-items: left;
+}
+
+.tienda {
+    width: 960px;
+    height: 1608px;
+
+    display: grid;
+}
+
+@media screen and (min-width: 1280px) {
+    .tienda {
+    height: auto;
+    grid-template-areas: "imagen1 imagen2 imagen3"
+    "imagen4 imagen5 imagen6"
+    "imagen7 imagen8 imagen9";
+    margin-right: 15px; } 
+}
+
