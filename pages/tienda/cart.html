@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
+
 <body>
-<header ><!--inicio header-->
-        <nav >
-            <picture >
-                <a href="../../index.html" ><img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkoshop" ></a>
-                
+    <header><!--inicio header-->
+        <nav>
+            <picture>
+                <a href="../../index.html"><img src="../../img/branding/logo_light_horizontal.svg"
+                        alt="Isologotipo de la marca funkoshop"></a>
             </picture>
-            
-            <ul >
+
+            <ul>
                 <li>
-                    <a href="./shop.html"class="list-shop">SHOP</a></li>
+                    <a href="../../pages/shop.html" class="list-shop">SHOP </a>
+                </li>
                 <li>
-                    <a href="./contact.html"class="list-contacto">CONTACTO</a></li>
+                    <a href="../../pages/contact.html" class="list-contacto">CONTACTO </a>
+                </li>
                 <li>
-                    <a href="../admin/login.html"class="list-login">LOGIN</a></li>
+                    <a href="../../pages/login.html" class="list-login">LOGIN </a>
+                </li>
                 <li>
-                    <a href="./cart.html"class="list-carrito">CARRITO
-                        <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
+                    <a href="../../pages/cart.html" class="list-carrito">
+                        <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
                     </a>
                 </li>
             </ul>
         </nav>
-</header><!--fin header-->
-<main>
-    <span>
-        <span class="carrito-header">
-            <h2>CARRITO DE COMPRAS</h2>
-        </span>
-        <div >
+    </header><!--fin header-->
+    <main>
+        <section> <!--Inicio de primera fila-->
+            <span class="carrito-header">
+                <h2>CARRITO DE COMPRAS</h2>
+            </span>
+        </section><!--fin de la primera fila-->
+        <section><!--Inicio de segunda fila-->
             <ul class="carrito-detalles">
                 <li>DETALLE PRODUCTO</li>
-                <li>CANTIDAD</li> 
+                <li>CANTIDAD</li>
                 <li>TOTAL</li>
             </ul>
-        </div>
-        <div>
-            <span>
-                <h3>BABY YODA BLUEBALL</h3>
-                <h4>STAR WARS</h4>
-                <p>precio: $1799,99</p>
-            </span>
+        </section><!--fin de la segunda fila-->
+        <section> <!--Inicio de tercera fila-->
+            <article>
+                <picture>
+                    <img src="../../img/star-wars/baby-yoda-1.webp" alt="Figura Funko Pop Grogu - The Mandalorian">
+                </picture>
+                <section>
+                    <h3>BABY YODA BLUEBALL</h3>
+                    <h4>STAR WARS</h4>
+                    <p>precio: $1799,99</p>
+                </section>
+            </article>
             <span>
                 <input type="number" />
                 <input type="button" value="+" />
@@ -58,56 +69,72 @@
             <span>
                 <img src="../../img/icons/delete_trash.svg" alt="icono de borrar">
             </span>
-        </div>
-    </span>
+        </section><!--fin de la tercera fila-->
+        <section> <!--Inicio de cuarta fila-->
+            <article>
+                <picture>
+                    <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura Funko Pop pidgeotto">
+                </picture>
+                <section>
+                    <h3>PIDGEOTTO</h3>
+                    <h4>POKEMON</h4>
+                    <p>precio: $1799,99</p>
+                </section>
+            </article>
+            <span>
+                <input type="number" />
+                <input type="button" value="+" />
+                <input type="button" value="-" />
+            </span>
+            <span>
+                <p>$1799,99</p>
+            </span>
+            <span>
+                <img src="../../img/icons/delete_trash.svg" alt="icono de borrar">
+            </span>
+        </section><!--fin de la cuarta fila-->
 
-
-
-    <span class="carrito">
-        <span class="carrito-header">
+      <aside>
+        <span class="carrito-header"><!--Inicio de primera fila del aside-->
             <h2>RESUMEN</h2>
-        </span>
+        </span><!--fin de la primera fila del aside-->
         <div class="carrito-resumen">
             <ul class="carrito-cantElementos">
                 <li>CANTIDAD ELEMENTOS</li>
-                <li>3</li>                        
+                <li>3</li>
             </ul>
             <ul class="carrito-subtotal">
                 <li>SUBTOTAL</li>
-                <li>3</li>                        
+                <li>$ 5.399,97</li>
             </ul>
             <ul class="carrito-envio">
                 <li>ENVIO</li>
-                <li>3</li>                        
+                <li>$ 0,00</li>
             </ul>
             <ul class="carrito-total">
                 <li>TOTAL</li>
-                <li>3</li>                        
+                <li>$ 5.399,97</li>
             </ul>
         </div>
         <button>IR A PAGAR</button>
-     </span>
+      </aside>
+       
+    </main>
 
-
-
-
-</main>
-
-<footer><!--inicio footer seccion -->
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="./shop.html">SHOP</a></li>
-                    <li><a href="./registrar.html">REGISTRARSE</a></li>
-                    <li><a href="./login.html">LOGIN</a></li>
-                    <li><a href="./contact.html">CONTACTO</a></li>
-                </ul>
-                <picture>
-                <img src="../img/branding/isotype.svg" alt="isotipo de la marca funco.com">
-                </picture>
-            </nav>
-        </section>
-        <p></p>
-</footer><!--fin footer seccion -->
+    <footer><!--inicio footer seccion -->
+        <nav class="piePagina">
+            <ul>
+                <li><a href="../../pages/shop.html">SHOP</a></li>
+                <li><a href="../../pages/registrar.html">REGISTRARSE</a></li>
+                <li><a href="../../pages/login.html">LOGIN</a></li>
+                <li><a href="../../pages/contact.html">CONTACTO</a></li>
+            </ul>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="isotipo de la marca funco.com">
+            </picture>
+        </nav>
+        <p>All rights reserved 2023 - Funkoshop &copy</p>
+    </footer><!--fin footer seccion -->
 </body>
+
 </html>
