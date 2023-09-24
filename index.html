@@ -12,7 +12,7 @@
 <body>
     <header><!--inicio header-->
         <nav class="container">
-            <picture class="grid-item1">
+            <picture>
                 <a href="./index.html"><img src="./img/branding/logo_light_horizontal.svg"
                         alt="Isologotipo de la marca funkoshop"></a>
             </picture>
@@ -20,47 +20,58 @@
 
                 <li><a href="./pages/tienda/shop.html">SHOP</a></li>
                 <li> <a href="./pages/admin/register.html">CONTACTO</a></li>
-                <li> <a href="./pages/tienda/login.html">LOGIN</a></li>
-                <li><a href="./pages/tienda/cart.html"> <img src="./img/icons/cart-icon.svg" alt="icono de carrito"> </a> </li>
+                <li> <a href="./pages/admin/login.html">LOGIN</a></li>
+                <li><a href="./pages/tienda/cart.html"> <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a> </li>
             </ul>
         </nav>
     </header><!--fin header-->
 
-    <section class="container">
-        <article>
+    <section class="caracte-banner"><!--inicio banner-->
+        <article class="container">
             <h3>Nuevos Ingresos</h3>
             <p> Descubrí el próximo Funko Pop de tu colección</p>
-            <a href="./pages/tienda/shop.html">SHOP</a>
+            <br><br>
+            <a href="./pages/tienda/shop.html"><input type=button class="boton-shop" value="SHOP"></a>
         </article>
 
     </section><!--fin banner-->
     <main class="container"> <!-- inicio cuerpo principal -->
-        <section>
+        <section class="texto-ima">
             <ARTICLE>
                 <h3>Star Wars &
                     The Mandalorian </h3>
                 <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                <a href="./pages/tienda/shop.html">VER COLECCIÓN</a>
+                <br><br>
+                <p class="linea-3"></p>
+                <br><br>
+                <a href="./pages/tienda/shop.html"><input type=button class="boton-shop1" value="VER COLECCIÓN"></a>
             </ARTICLE>
             <picture>
                 <img src="./img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable de funko grogu">
             </picture>
         </section><!--fin primera seccion-->
-        <section><!--inicio segunda seccion-->
+        <section class="texto-ima-rev"><!--inicio segunda seccion-->
             <ARTICLE>
                 <h3>POKEMON INDIGO</h3>
                 <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                <a href="./pages/tienda/shop.html">VER COLECCIÓN</a>
+                <br><br>
+                <p class="linea-3"></p>
+                <br><br>
+                <a href="./pages/tienda/shop.html"><input type=button class="boton-shop1" value="VER COLECCIÓN"></a>
             </ARTICLE>
             <picture>
                 <img src="./img/pokemon/vulpix-1.webp" alt="Figura coleccionable de funko vulpis de la serie pokemon">
             </picture>
         </section><!--fin segunda seccion-->
-        <section><!--inicio tercera seccion-->
+        <section class="texto-ima"><!--inicio tercera seccion-->
             <ARTICLE>
                 <h3>HARRY POTTER </h3>
                 <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                <a href="./pages/tienda/shop.html">VER COLECCIÓN</a>
+                <br><br>
+                <p class="linea-3"></p>
+                <br><br>
+                <a href="./pages/tienda/shop.html"><input type=button class="boton-shop1" value="VER COLECCIÓN"></a>
             </ARTICLE>
             <picture>
                 <img src="./img/harry-potter/snape-patronus-1.webp"
@@ -70,50 +81,40 @@
         <section>
             <!--inicio cuarta seccion -->
             <h2>Últimos lanzamientos</h2>
-            <ul>
-                <div>
-                    <!--inicio cuarta seccion primer articulo-->
+            <ul class="texto-ima-3">
+                <li><!--inicio cuarta seccion primer articulo-->
                     <a href="">
                         <div>
-                            <img src="./img/star-wars/trooper-1.webp" alt="figura coleccionable star Wars">
-                            <p>STAR WARS</p>
+                            <p class="img-card-wars"><input type=button class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">STAR WARS</p>
                             <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
                         </div>
                     </a>
-                </div>
-                <!--fin cuarta seccion primer articulo-->
-                <div>
-                    <!--inicio cuarta seccion segundo articulo-->
+                </li> <!--fin cuarta seccion primer articulo-->
+                <li> <!--inicio cuarta seccion segundo articulo-->
                     <a href="">
-                        <picture>
-                            <img src="./img/pokemon/pidgeotto-1.webp" alt="figura coleccionable pidgeotto de pokemon">
-                        </picture>
                         <div>
-                            <p>POKEMON</p>
+                            <p class="img-card-pokemon"><input type=button class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">POKEMON</p>
                             <h4>PIDGEOTTO</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
                         </div>
-                    </a>
-                    <!--fin cuarta seccion segundo articulo-->
-                </div>
-                <div>
-                    <!--inicio cuarta seccion tercer articulo-->
+                    </a>    
+                </li>  <!--fin cuarta seccion segundo articulo-->
+                <li> <!--inicio cuarta seccion tercer articulo-->
                     <a href="">
-                        <picture>
-                            <img src="./img/harry-potter/luna-1.webp" alt="figura coleccionable luna de harry POTTER">
-                        </picture>
                         <div>
-                            <p>HARRY POTTER</p>
+                            <p class="img-card-potter"><input type=button class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">HARRY POTTER</p>
                             <h4>LUNA LOVEGOOD LION MASK</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
                         </div>
                     </a>
-                    <!--fin cuarta seccion tercer articulo-->
-                </div>
+                </li>  <!--fin cuarta seccion tercer articulo-->
             </ul>
         </section>
 
@@ -123,7 +124,7 @@
             <img src="./img/branding/isotype.svg" alt="isotipo de la marca funco.com">
             <ul>
                 <li><a href="./pages/tienda/shop.html">SHOP</a></li>
-                <li><a href="./pages/tienda/login.html">INGRESAR</a></li>
+                <li><a href="./pages/admin/create.html">INGRESAR</a></li>
                 <li><a href="./pages/tienda/contact.html">CONTACTO</a></li>
             </ul>
         </nav>

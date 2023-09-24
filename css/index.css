@@ -74,22 +74,98 @@ footer {
     background-color: var(--dark-bg-solid);
 }
 
+h2 {
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+h3 {
+    font-size: var(--font-jumbo);
+    width: 441px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+h4 {
+    font-family: var(--base-font);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    padding-left: 13px;
+}
+
 ul,
 ol {
     list-style: none;
 }
 
 p {
-    font-size: 1.8em;
+    font-size: var(--font-medium);
+    padding-top: 5px;
+    width: 458px;
 }
+
+/* configuración banner */
+
+.caracte-banner {
+    background-image: url(../img/funkos-banner.webp);
+    background-size: 100%;
+    height: 344px;
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+    position: relative;
+    padding-top: 10.5em;
+}
+
+/* botones */
+/* boton fondo blanco letras negras */
+.boton-shop {
+    display: inline-block;
+    width: 211px;
+    height: 47px;
+    border-radius: 50px;
+    background: var(--light-font-solid);
+    color: var(--dark-solid);
+}
+
+/* boton fondo gris oscuro letras blancas */
+.boton-shop1 {
+    display: inline-block;
+    width: 291.8px;
+    height: 65px;
+    border-radius: 50px;
+    background: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    font-size: 24px;
+
+}
+
+/* boton fondo ROJO letras blancas */
+.boton-nuevo {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: inline-block;
+    width: 96.127px;
+    height: 30px;
+    background: var(--primary-solid);
+    border: var(--primary-solid);
+    color: var(--light-font-solid);
+    
+}
+
 /* centrar todos los cuerpos de la pagina */
 .container {
-    max-width: 1220px; 
+    max-width: 1220px;
     margin: 0 auto;
 }
+
 /* configuración general del header */
 
-header nav{
+header nav {
     display: flex;
     flex-flow: row;
     height: 144px;
@@ -97,37 +173,119 @@ header nav{
     gap: 442px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     flex-flow: row;
     align-items: center;
     gap: 49px;
 }
 
+
+
 /* configuración pie de pagina */
 
 
-footer nav{
+footer nav {
     display: flex;
     flex-flow: row-reverse;
     height: 274px;
     align-items: center;
     gap: 968px;
 }
-footer nav ul li{
+
+footer nav ul li {
     padding-top: 7.5px;
 }
-footer p{
+
+footer p {
     padding: 23px;
     padding-left: 40%;
     height: 66px;
-    
+    width: 100%;
+
+}
+
+/* Configuración main de tienda flex box horizontal de izq a der*/
+.texto-ima {
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-family: var(--alternative-font)
+}
+
+/* Configuración main de tienda flex box horizontal de der a izq*/
+.texto-ima-rev {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    font-family: var(--alternative-font);
+}
+
+/* Configuración  flex box de items horizontal de tres izq a der*/
+.texto-ima-3 {
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 71, 55px;
+    margin-top: 57px;
+    margin-right: 71, 55px;
+    margin-bottom: 68px;
+    font-family: var(--base-font);
 }
 
 
+#primer-tex {
+    color: var(--dark-bg-solid);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 13px;
+}
+#segundo-tex {
+    color: var(--dark-bg-solid);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 13px;
+}
+#tercer-tex {
+    color: var(--secondary-solid);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 13px;
+}
+.linea-3 {
+    position: relative;
+    width: 645px;
+    height: 3px;
+    background: var(--primary-solid);
+}
 
-
-
+.img-card-wars {
+    position: relative;
+    background-image: url(../img/star-wars/trooper-1.webp);
+    background-size: 100%;
+    width: 359px;
+    height: 352px;
+}
+.img-card-pokemon {
+    
+    background-image: url(../img/pokemon/pidgeotto-1.webp);
+    position: relative;
+    background-size: 100%;
+    width: 359px;
+    height: 352px;
+}
+.img-card-potter {
+    background-image: url(../img/harry-potter/luna-1.webp);
+    position: relative;
+    background-size: 100%;
+    width: 359px;
+    height: 352px;
+}
 
 /* SHOP CSS */
 
@@ -141,4 +299,3 @@ footer p{
 
     display: grid;
 }
-
