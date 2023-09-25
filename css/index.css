@@ -289,13 +289,40 @@ footer p {
 
 /* SHOP CSS */
 
-.buscar {
-    align-items: left;
+.tienda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
-.tienda {
-    width: 960px;
-    height: 1608px;
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
 
-    display: grid;
+.imagen {
+
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px;
+}
+
+.pagination{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination a{
+    padding: 2px;
+    margin: 2px;
+}
+
+.buscar{
+    float: left;
 }
