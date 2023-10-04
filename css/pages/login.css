@@ -1,0 +1,14 @@
+.login {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+.login-box {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+    
+
+}
