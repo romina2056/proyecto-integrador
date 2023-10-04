@@ -1,333 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+/* EXTERNALS */
 
-:root {
-    /*palet the colors*/
-    --primary-solid: #FF3333;
-    --primary-900: rgb(255, 51, 51, 0.9);
-    --primary-500: rgb(255, 51, 51, 0.5);
-    --primary-300: rgb(255, 51, 51, 0.3);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url();
+@import url();
 
-    --secondary-solid: #1D84B5;
-    --secondary-900: rgb(29, 132, 181, 0.9);
-    --secondary-500: rgb(29, 132, 181, 0.5);
-    --secondary-300: rgb(29, 132, 181, 0.3);
+/* MISCELANEOUS */
 
-    --dark-solid: #1F1F1F;
-    --dark-900: rgb(31, 31, 31, 0.9);
-    --dark-500: rgb(31, 31, 31, 0.5);
-    --dark-300: rgb(31, 31, 31, 0.3);
+@import url(./misc/animations.css);
+@import url(./misc/helpers.css);
+@import url(./misc/normalize.css);
+@import url(./misc/variables.css);
 
-    --dark-bg-solid: #30343F;
-    --light-bg-solid: #FAFAFF;
-    --light-font-solid: #ffffff;
+/* PARTIALS */
 
-    /*Typography */
-    --base-font: 'inter', sans-serif;
-    --alternative-font: 'Raleway', sans-serif;
+@import url(./partials/footer.css);
+@import url(./partials/header.css);
 
-    /*font-sizes */
-    --font-display: 4.6em;
-    --font-jumbo: 3.8em;
-    --font-xlarge: 3em;
-    --font-large: 2.4em;
-    --font-medium: 1.8em;
-    --font-small: 1.6em;
-    --font-xsmall: 1.4em;
-    /* spacings*/
-    --spacing-128: 12.8res;
-    --spacing-68: 6.8res;
-    --spacing-36: 3.6res;
-    --spacing-28: 2.8res;
-    --spacing-24: 2.4res;
-    --spacing-16: 1.6res;
-    --spacing-12: 1.2res;
-    --spacing-8: 0.8res;
-}
+/* COMPONENTS */
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-}
+@import url(./components/buttons.css);
+@import url(./components/form.css);
+@import url(./components/card.css);
+@import url(./components/slider.css);
+@import url(./components/newsletter.css);
 
-html {
-    font-family: var(--base-font);
-    font-size: 62.5%;
-    color: var(--dark-solid);
+/* PAGES */
 
-}
-
-a {
-    text-decoration: none;
-    font-size: 2em;
-    font-family: inherit;
-    color: inherit;
-}
-
-header,
-footer {
-    font-family: var(--alternative-font);
-    color: var(--light-font-solid);
-    background-color: var(--dark-bg-solid);
-}
-
-h2 {
-    font-family: var(--alternative-font);
-    font-size: var(--font-display);
-    text-transform: uppercase;
-    font-style: normal;
-}
-
-h3 {
-    font-size: var(--font-jumbo);
-    width: 441px;
-    text-transform: uppercase;
-    font-style: normal;
-}
-
-h4 {
-    font-family: var(--base-font);
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: normal;
-    padding-left: 13px;
-}
-
-ul,
-ol {
-    list-style: none;
-}
-
-p {
-    font-size: var(--font-medium);
-    padding-top: 5px;
-    width: 458px;
-}
-
-/* configuración banner */
-
-.caracte-banner {
-    background-image: url(../img/funkos-banner.webp);
-    background-size: 100%;
-    height: 344px;
-    font-family: var(--alternative-font);
-    color: var(--light-font-solid);
-    position: relative;
-    padding-top: 10.5em;
-}
-
-/* botones */
-/* boton fondo blanco letras negras */
-.boton-shop {
-    display: inline-block;
-    width: 211px;
-    height: 47px;
-    border-radius: 50px;
-    background: var(--light-font-solid);
-    color: var(--dark-solid);
-}
-
-/* boton fondo gris oscuro letras blancas */
-.boton-shop1 {
-    display: inline-block;
-    width: 291.8px;
-    height: 65px;
-    border-radius: 50px;
-    background: var(--dark-bg-solid);
-    color: var(--light-font-solid);
-    font-size: 24px;
-
-}
-
-/* boton fondo ROJO letras blancas */
-.boton-nuevo {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    display: inline-block;
-    width: 96.127px;
-    height: 30px;
-    background: var(--primary-solid);
-    border: var(--primary-solid);
-    color: var(--light-font-solid);
-    
-}
-
-/* centrar todos los cuerpos de la pagina */
-.container {
-    max-width: 1220px;
-    margin: 0 auto;
-}
-
-/* configuración general del header */
-
-header nav {
-    display: flex;
-    flex-flow: row;
-    height: 144px;
-    align-items: center;
-    gap: 442px;
-}
-
-header nav ul {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    gap: 49px;
-}
-
-
-
-/* configuración pie de pagina */
-
-
-footer nav {
-    display: flex;
-    flex-flow: row-reverse;
-    height: 274px;
-    align-items: center;
-    gap: 968px;
-}
-
-footer nav ul li {
-    padding-top: 7.5px;
-}
-
-footer p {
-    padding: 23px;
-    padding-left: 40%;
-    height: 66px;
-    width: 100%;
-
-}
-
-/* Configuración main de tienda flex box horizontal de izq a der*/
-.texto-ima {
-
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    font-family: var(--alternative-font)
-}
-
-/* Configuración main de tienda flex box horizontal de der a izq*/
-.texto-ima-rev {
-    display: flex;
-    flex-flow: row-reverse;
-    align-items: center;
-    font-family: var(--alternative-font);
-}
-
-/* Configuración  flex box de items horizontal de tres izq a der*/
-.texto-ima-3 {
-
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    gap: 71, 55px;
-    margin-top: 57px;
-    margin-right: 71, 55px;
-    margin-bottom: 68px;
-    font-family: var(--base-font);
-}
-
-
-#primer-tex {
-    color: var(--dark-bg-solid);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 13px;
-}
-#segundo-tex {
-    color: var(--dark-bg-solid);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    padding: 13px;
-}
-#tercer-tex {
-    color: var(--secondary-solid);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    padding-left: 13px;
-}
-.linea-3 {
-    position: relative;
-    width: 645px;
-    height: 3px;
-    background: var(--primary-solid);
-}
-
-.img-card-wars {
-    position: relative;
-    background-image: url(../img/star-wars/trooper-1.webp);
-    background-size: 100%;
-    width: 359px;
-    height: 352px;
-}
-.img-card-pokemon {
-    
-    background-image: url(../img/pokemon/pidgeotto-1.webp);
-    position: relative;
-    background-size: 100%;
-    width: 359px;
-    height: 352px;
-}
-.img-card-potter {
-    background-image: url(../img/harry-potter/luna-1.webp);
-    position: relative;
-    background-size: 100%;
-    width: 359px;
-    height: 352px;
-}
-
-/* SHOP CSS */
-
-.tienda {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.fila {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-}
-
-.imagen {
-
-    width: 200px;
-    height: 200px;
-    margin: 10px 5px;
-}
-
-.pagination{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pagination a{
-    padding: 2px;
-    margin: 2px;
-}
-
-.buscar{
-    float: left;
-    font-size: 16px;
-    margin: 10px;
-    padding: 10px;
-    color: black;
-}
-
+@import url(./pages/admin.css);
+@import url(./pages/cart.css);
+@import url(./pages/contact.css);
+@import url(./pages/create.css);
+@import url(./pages/edit.css);
+@import url(./pages/home.css);
+@import url(./pages/item.css);
+@import url(./pages/login.css);
+@import url(./pages/register.css);
+@import url(./pages/shop.css);

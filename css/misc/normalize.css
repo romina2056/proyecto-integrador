@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+    font-family: inherit;
+    color: inherit;
+}
+
+header,
+footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+    background-color: var(--dark-bg-solid);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+p {
+    font-size: var(--font-medium);
+    padding-top: 5px;
+    width: 458px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

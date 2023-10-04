@@ -1,0 +1,14 @@
+header nav {
+    display: flex;
+    flex-flow: row;
+    height: 144px;
+    align-items: center;
+    gap: 442px;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 49px;
+}
