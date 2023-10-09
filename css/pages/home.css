@@ -1,6 +1,6 @@
 /* configuración banner */
 .caracte-banner {
-    background-image: url(../img/funkos-banner.webp);
+    background-image: url(../../img/funkos-banner.webp);
     background-size: 100%;
     height: 344px;
     font-family: var(--alternative-font);
@@ -32,70 +32,9 @@ h4 {
     padding-left: 13px;
 }
 
-/* botones */
-/* boton fondo blanco letras negras */
-.boton-shop {
-    display: inline-block;
-    width: 211px;
-    height: 47px;
-    border-radius: 50px;
-    background: var(--light-font-solid);
-    color: var(--dark-solid);
-}
 
-/* boton fondo gris oscuro letras blancas */
-.boton-shop1 {
-    display: inline-block;
-    width: 291.8px;
-    height: 65px;
-    border-radius: 50px;
-    background: var(--dark-bg-solid);
-    color: var(--light-font-solid);
-    font-size: 24px;
-}
 
-/* boton fondo ROJO letras blancas */
-.boton-nuevo {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    display: inline-block;
-    width: 96.127px;
-    height: 30px;
-    background: var(--primary-solid);
-    border: var(--primary-solid);
-    color: var(--light-font-solid);
-    
-}
 
-/* Configuración main de tienda flex box horizontal de izq a der*/
-.texto-ima {
-
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    font-family: var(--alternative-font)
-}
-
-/* Configuración main de tienda flex box horizontal de der a izq*/
-.texto-ima-rev {
-    display: flex;
-    flex-flow: row-reverse;
-    align-items: center;
-    font-family: var(--alternative-font);
-}
-
-/* Configuración  flex box de items horizontal de tres izq a der*/
-.texto-ima-3 {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    gap: 71, 55px;
-    margin-top: 57px;
-    margin-right: 71, 55px;
-    margin-bottom: 68px;
-    font-family: var(--base-font);
-}
 
 #primer-tex {
     color: var(--dark-bg-solid);
@@ -128,27 +67,3 @@ h4 {
     background: var(--primary-solid);
 }
 
-.img-card-wars {
-    position: relative;
-    background-image: url(../img/star-wars/trooper-1.webp);
-    background-size: 100%;
-    width: 359px;
-    height: 352px;
-}
-
-.img-card-pokemon {
-    
-    background-image: url(../img/pokemon/pidgeotto-1.webp);
-    position: relative;
-    background-size: 100%;
-    width: 359px;
-    height: 352px;
-}
-
-.img-card-potter {
-    background-image: url(../img/harry-potter/luna-1.webp);
-    position: relative;
-    background-size: 100%;
-    width: 359px;
-    height: 352px;
-}
