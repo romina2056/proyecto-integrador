@@ -1,0 +1,28 @@
+/* Configuración main de tienda flex box horizontal de izq a der*/
+.texto-ima {
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-family: var(--alternative-font)
+}
+
+/* Configuración main de tienda flex box horizontal de der a izq*/
+.texto-ima-rev {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    font-family: var(--alternative-font);
+}
+
+/* Configuración  flex box de items horizontal de tres izq a der*/
+.texto-ima-3 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 71, 55px;
+    margin-top: 57px;
+    margin-right: 71, 55px;
+    margin-bottom: 68px;
+    font-family: var(--base-font);
+}
