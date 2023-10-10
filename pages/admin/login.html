@@ -24,39 +24,39 @@
             </ul>
         </nav>
     </header><!--fin header-->
-    <main><!--inicio cuerpo principal-->
+    <main class="login-all"><!--inicio cuerpo principal-->
         <div class="login">
             <span class="login-box">
                 <section> <!--Inicio de primera fila-->
                         <span class="login-header">
-                            <h4>INGRESAR A MI CUENTA</h4>
+                            <h1>INGRESAR A MI CUENTA</h1>
                         </span>
                 </section><!--fin de la primera fila-->
-                    <section><!--EMAIL-->
-                        <div> 
+                    <div class="datos"><!-- INGRESO DATOS -->
+                        <section><!--EMAIL-->
+                                <form action="#">
+                                    <label class="write" for="email">Email:</label>
+                                    <input class="complete" type="text" placeholder="ejemplo@correo.com">
+                                </form>
+                        </section><!--fin de la EMAIL-->
+                        <section><!--PASSWORD-->
                             <form action="#">
-                                <label for="email">Email:</label>
-                                <input type="text" placeholder="ejemplo@correo.com">
-                            </form>
-                        </div>
-                    </section><!--fin de la EMAIL-->
-                    <section><!--PASSWORD-->
-                        <form action="#">
-                            <label for="pwd">Contraseña:</label>
-                            <input type="password" id="pwd" name="pwd" value="**********">
-                        </form>
-                    </section><!--fin de PASSWORD-->
+                                <label class="write" for="pwd">Contraseña:</label>
+                                <input class="complete" type="password" id="pwd" name="pwd" value="**********">
+                             </form>
+                        </section><!--fin de PASSWORD-->
+                    </div>
                     <section><!--inicio de la cuarta fila-->
                         <input type="submit" value="Ingresar">
                         <form action="#">
                             <input type="checkbox" id="recordar" name="recordar" value="recordarme">
-                            <label for="recordar"> Recordame</label><br>
+                            <label for="recordar"> Recordarme</label><br>
 
                         </form>
                     </section><!--fin de la cuarta fila-->
                     <section><!--inicio de la quinto fila-->
                         <a href="#">
-                            <p>Olvidé mi contraseña</p>
+                            <div>Olvidé mi contraseña</div>
                         </a>
                         <button><a href="./register.html">Registrate</a></button>
                 </section><!--fin de la quinto fila-->

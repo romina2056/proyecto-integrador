@@ -1,15 +1,33 @@
+.login-all {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
 .login {
-    padding-top: 38px;
-    padding-bottom: 38px;
+    /* width: 400px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    
+    padding-top: 36px;
+    padding-bottom: 40px;
+    /* text-align: center; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .login-box {
-    display: flex;
+width: 400px
+margin: 0 auto */
+ /* display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: center;  */
 }
 
 .login-header {
-    font-size: 10px;
+    /* width:fit-content */
+    font-size: 20px;;
 }
