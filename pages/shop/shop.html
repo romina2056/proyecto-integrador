@@ -20,41 +20,44 @@
                 <li><a href="../../pages/shop/shop.html">SHOP</a></li>
                 <li> <a href="../../pages/admin/register.html">CONTACTO</a></li>
                 <li> <a href="../../pages/admin/login.html">LOGIN</a></li>
-                <li><a href="../../pages/shop/cart.html"> <img src="../../img/icons/cart-icon.svg" alt="icono de carrito"> </a> </li>
+                <li><a href="../../pages/shop/cart.html"> <img src="../../img/icons/cart-icon.svg"
+                            alt="icono de carrito"> </a> </li>
             </ul>
         </nav>
     </header><!--fin header-->
 
-    <main>  <!--inicio del cuerpo principal del shop -->
+    <main class="container texto-imaBusqueda"> <!--inicio del cuerpo principal del shop -->
         <aside>
             <section class="buscar">
                 <div>
                     <p>Buscar</p>
                     <form action="#">
-                        <input type="search" placeholder="item o categoria">
+                        <input type="search" placeholder="item o categoria" sty>
                     </form>
                 </div>
-    
+
                 <div>
                     <p>Ordenar por</p>
                     <form action="#">
-                        <select name="ordenar" id="ordenar">
+                        <select name="ordenar" id="Vector" > 
                             <option value="mayor">Mayor a menor</option>
                             <option value="menor">Menor a mayor</option>
-                            </select>
+
+                           
+                        </select>
                     </form>
                 </div>
-    
+
                 <div>
-                        <p>Precio</p>
-                        <form action="#">
+                    <p>Precio</p>
+                    <form action="#">
                         <label for="#">Min</label>
-                        <input type="search" placeholder="0" />
+                        <input type="search" placeholder="0" size="1" />
                         <label for="#">- Max</label>
-                        <input type="search" placeholder="0" />
+                        <input type="search" placeholder="0" size="1" />
                     </form>
                 </div>
-    
+
                 <div> <!--Filtro de productos-->
                     <p>Filtrar</p>
                     <form action="#" class="filtrar">
@@ -80,134 +83,132 @@
                 </div>
             </section>
         </aside>
-        <ul> <!--inicio de la primera fila-->
-            <div class="tienda">
-                <div class="fila">
-                    <div>
-                        <li>
-                            <a href="">
-                                <div>
-                                    <p class="img-card-wars imagen"><input type=button class="boton-nuevo" value="NUEVO"></p>
-                                    <p id="primer-tex">STAR WARS</p>
-                                    <h4>STORMTROOPER LIGHTSABER</h4>
-                                    <p id="segundo-tex">$ 1799,99</p>
-                                    <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
-                                </div>
-                            </a>
-                        </li>
-                    </div>
-                    <div>
-                        <li>
-                            <a href="">
-                                <div>
-                                    <p class="img-card-pokemon imagen"><input type=button class="boton-nuevo" value="NUEVO"></p>
-                                    <p id="primer-tex">POKEMON</p>
-                                    <h4>PIDGEOTTO</h4>
-                                    <p id="segundo-tex">$ 1799,99</p>
-                                    <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
-                                </div>
-                            </a>    
-                        </li>
-                    </div>
-                    <div>
-                        <li>
-                            <a href="">
-                                <div>
-                                    <p class="img-card-potter imagen"><input type=button class="boton-nuevo" value="NUEVO"></p>
-                                    <p id="primer-tex">HARRY POTTER</p>
-                                    <h4>LUNA LOVEGOOD LION MASK</h4>
-                                    <p id="segundo-tex">$ 1799,99</p>
-                                    <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
-                                </div>
-                            </a>   
-                        </li>
-                    </div>
-                </div>
-                <div class="fila">
-                    <div>
-                        <a href="">
-                            <div>
-                                <p class="img-card-wars imagen"><input type=button class="boton-nuevo" value="NUEVO"></p>
-                                <p id="primer-tex">STAR WARS</p>
-                                <h4>STORMTROOPER LIGHTSABER</h4>
-                                <p id="segundo-tex">$ 1799,99</p>
-                                <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <div>
-                                <p class="img-card-pokemon imagen"><input type=button class="boton-nuevo" value="NUEVO"></p>
-                                <p id="primer-tex">POKEMON</p>
-                                <h4>PIDGEOTTO</h4>
-                                <p id="segundo-tex">$ 1799,99</p>
-                                <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>    
-                    </div>
-                    <div>
-                        <a href="">
-                            <div>
-                                <p class="img-card-potter imagen"><input type=button class="boton-nuevo" value="NUEVO"></p>
-                                <p id="primer-tex">HARRY POTTER</p>
-                                <h4>LUNA LOVEGOOD LION MASK</h4>
-                                <p id="segundo-tex">$ 1799,99</p>
-                                <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="fila">
-                    <div>
-                        <a href="">
-                            <div>
-                                <p class="img-card-wars imagen"><input type=button class="boton-nuevo" value="NUEVO"></p>
-                                <p id="primer-tex">STAR WARS</p>
-                                <h4>STORMTROOPER LIGHTSABER</h4>
-                                <p id="segundo-tex">$ 1799,99</p>
-                                <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <div>
-                                <p class="img-card-pokemon imagen"><input type=button class="boton-nuevo" value="NUEVO"></p>
-                                <p id="primer-tex">POKEMON</p>
-                                <h4>PIDGEOTTO</h4>
-                                <p id="segundo-tex">$ 1799,99</p>
-                                <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>    
-                    </div>
-                    <div>
+        <div>
+            <ul class="texto-ima-3-pequeño-shop">
+                <li><!--inicio cuarta seccion primer articulo-->
+                    <a href="">
                         <div>
-                            <a href="">
-                                <div>
-                                    <p class="img-card-potter imagen"><input type=button class="boton-nuevo" value="NUEVO"></p>
-                                    <p id="primer-tex">HARRY POTTER</p>
-                                    <h4>LUNA LOVEGOOD LION MASK</h4>
-                                    <p id="segundo-tex">$ 1799,99</p>
-                                    <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
-                                </div>
-                            </a>
+                            <p class="img-card-wars" style="width: 304px; background-size: 108%;"><input type=button
+                                    class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">STAR WARS</p>
+                            <h4>STORMTROOPER LIGHTSABER</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </ul>
+                    </a>
+                </li> <!--fin cuarta seccion primer articulo-->
+                <li> <!--inicio cuarta seccion segundo articulo-->
+                    <a href="">
+                        <div>
+                            <p class="img-card-pokemon" style="width: 304px; background-size: 108%;"><input type=button
+                                    class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">POKEMON</p>
+                            <h4>PIDGEOTTO</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </li> <!--fin cuarta seccion segundo articulo-->
+                <li>
+                    <a href="">
+                        <div>
+                            <p class="img-card-potter" style="width: 304px; background-size: 108%;"><input type=button
+                                    class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">HARRY POTTER</p>
+                            <h4>LUNA LOVEGOOD LION MASK</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a> <!--fin cuarta seccion tercer articulo-->
+                </li>
+            </ul>
+            <ul class="texto-ima-3-pequeño-shop">
+                <li><!--inicio cuarta seccion primer articulo-->
+                    <a href="">
+                        <div>
+                            <p class="img-card-wars" style="width: 304px; background-size: 108%;"><input type=button
+                                    class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">STAR WARS</p>
+                            <h4>STORMTROOPER LIGHTSABER</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </li> <!--fin cuarta seccion primer articulo-->
+                <li> <!--inicio cuarta seccion segundo articulo-->
+                    <a href="">
+                        <div>
+                            <p class="img-card-pokemon" style="width: 304px; background-size: 108%;"><input type=button
+                                    class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">POKEMON</p>
+                            <h4>PIDGEOTTO</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </li> <!--fin cuarta seccion segundo articulo-->
+                <li>
+                    <a href="">
+                        <div>
+                            <p class="img-card-potter" style="width: 304px; background-size: 108%;"><input type=button
+                                    class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">HARRY POTTER</p>
+                            <h4>LUNA LOVEGOOD LION MASK</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a> <!--fin cuarta seccion tercer articulo-->
+                </li>
+            </ul>
+            <ul class="texto-ima-3-pequeño-shop">
+                <li><!--inicio cuarta seccion primer articulo-->
+                    <a href="">
+                        <div>
+                            <p class="img-card-wars" style="width: 304px; background-size: 108%;"><input type=button
+                                    class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">STAR WARS</p>
+                            <h4>STORMTROOPER LIGHTSABER</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </li> <!--fin cuarta seccion primer articulo-->
+                <li> <!--inicio cuarta seccion segundo articulo-->
+                    <a href="">
+                        <div>
+                            <p class="img-card-pokemon" style="width: 304px; background-size: 108%;"><input type=button
+                                    class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">POKEMON</p>
+                            <h4>PIDGEOTTO</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </li> <!--fin cuarta seccion segundo articulo-->
+                <li>
+                    <a href="">
+                        <div>
+                            <p class="img-card-potter" style="width: 304px; background-size: 108%;"><input type=button
+                                    class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">HARRY POTTER</p>
+                            <h4>LUNA LOVEGOOD LION MASK</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a> <!--fin cuarta seccion tercer articulo-->
+                </li>
+            </ul>
+        </div>
     </main>
 
     <div class="pagination"> <!--Inicia el indicador de paginas de shop -->
-        <a href="#">&laquo</a>
+        <a href="#"><img src="../../img/icons/left.svg" alt=""></a>
         <a href="../../index.html">1 </a>
         <a href="../../pages/shop.html">2 </a>
-        <a href="../../pages/item.html">3 </a>
-        <a href="#">4 </a>
-        <a href="#">5 </a>
-        <a href="#">6 </a>
-        <a href="#">&raquo</a>
+        <a href="../../pages/item.html">... </a>
+        <a href="#">9 </a>
+        <a href="#">10 </a>
+        <a href="#"><img src="../../img/left.svg" alt=""></a>
     </div><!--fin el indicador de paginas de shop -->
 
     <footer><!--inicio footer seccion -->

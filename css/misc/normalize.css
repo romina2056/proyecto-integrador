@@ -32,7 +32,7 @@ ol {
     list-style: none;
 }
 
-p {
+section article p{
     font-size: var(--font-medium);
     padding-top: 5px;
     width: 458px;
