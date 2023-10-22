@@ -66,10 +66,10 @@ aside section div p {
     font-size: 24px;
 }
 
-.texto-imaBusqueda aside section div form input:nth-child(1) {
-    width: 243.034px;
+#buscarItem {
+    width: 233.034px;
     height: 44.285px;
-    flex-shrink: 0;
+    
     border-radius: 6px;
     border: 2px solid var(--dark-bg-solid);
     margin-top: 10px;
@@ -78,23 +78,66 @@ aside section div p {
 }
 
 .texto-imaBusqueda aside section div form select:nth-child(1) {
-    width: 243.034px;
+    width: 233.034px;
     height: 44.285px;
-    flex-shrink: 0;
+    
     border-radius: 6px;
     border: 2px solid var(--dark-bg-solid);
     margin-top: 10px;
     padding-left: 10px;
     margin-bottom: 28px;
 }
-
-select {
-
+.mayMenor {
+       font-size: small;
+    width: 243px;
+    height: 44.285px;
+   
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+.mayMenor input{
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+    text-align:center;
+    height: 27.5px;
+    width: 59.1px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.filtroProducto{
+  flex-flow: row;
+  align-items: center;
+    margin-top: 16px;
     position: relative;
-    image: url(../../img/icons/material-symbols_arrow-drop-down-rounded.svg);
-    right: 10px;
-    top: 10px;
-    width: 100%;
-    background-size:  contain;
+}
+.filtroProducto li input{
+    position: absolute;
+   left: 10px;
+    font-size: small;
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    padding: 0;
     
 }
+.filtroProducto li label{
+    position: relative;
+    bottom: 5px;
+    left: 40px;
+    font-size: medium;
+    
+}
+
+select {
+    background-image: url(../../img/icons/material-symbols_arrow-drop-down-rounded.svg); /*aquí deberás escribir la ruta de la imagen que utilizarás como flecha del desplegable*/
+    background-repeat: no-repeat;
+    background-position: 200px ;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    }
+    select::-ms-expand {
+    display: none; /*Evita que se muestre la flecha por defecto en versiones de IE*/
+    }

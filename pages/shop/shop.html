@@ -31,26 +31,24 @@
             <section class="buscar">
                 <div>
                     <p>Buscar</p>
-                    <form action="#">
-                        <input type="search" placeholder="item o categoria" sty>
+                    <form action="#" >
+                        <input id="buscarItem" type="search" placeholder="item o categoria" >
                     </form>
                 </div>
 
                 <div>
                     <p>Ordenar por</p>
-                    <form action="#">
-                        <select name="ordenar" id="Vector" > 
+                    <form class="modifi-select" action="#">
+                        <select name="ordenar" id="Vector">
                             <option value="mayor">Mayor a menor</option>
                             <option value="menor">Menor a mayor</option>
-
-                           
                         </select>
                     </form>
                 </div>
 
                 <div>
                     <p>Precio</p>
-                    <form action="#">
+                    <form action="#" class="mayMenor">
                         <label for="#">Min</label>
                         <input type="search" placeholder="0" size="1" />
                         <label for="#">- Max</label>
@@ -61,14 +59,14 @@
                 <div> <!--Filtro de productos-->
                     <p>Filtrar</p>
                     <form action="#" class="filtrar">
-                        <ul>
+                        <ul class="filtroProducto">
                             <li>
                                 <input type="checkbox" name="nuevos">
                                 <label for="">Nuevos</label>
                             </li>
                             <li>
-                                <input type="checkbox">
-                                <label for="" name="ofertas">Ofertas</label>
+                                <input type="checkbox" name="ofertas">
+                                <label for="">Ofertas</label>
                             </li>
                             <li>
                                 <input type="checkbox" name="especial">

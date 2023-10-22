@@ -26,6 +26,7 @@
 
 .texto-imaBusqueda div {
     grid-column: 2 / 3;
+    margin-left: 10px;
 }
 
 
