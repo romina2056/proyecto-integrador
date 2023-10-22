@@ -55,9 +55,45 @@
     padding-bottom: 20px;
 }
 
-.ingresar {
+.datospers2 {
+    
+}
+
+.datospers3 {
+}
+
+.txt{
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    padding-left: 50px;
+}
+
+.txt2{
+    color: #1F1F1F;
+
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.txt3{
+    color: #1D84B5;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.regisYaceptar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     padding-left: 70px;
     padding-right: 50px;
     padding-bottom: 20px;
@@ -93,10 +129,10 @@
     font-family: var(--base-font);
 }
 
-#pwd::placeholder {
-    padding-bottom: 13px;
+#pwd1::placeholder {
+    padding-bottom: 19px;
     background-image: url(../../img/icons/Group\ 95.svg);
-    background-size: 170px; 
+    background-size: 160px; 
     background-repeat: no-repeat; /* Hace que no se repita el fondo dentro del placeholder*/
     background-position: left;/*  Alinea el icono a la izquierda y al centro del campo de entrada */
 }
@@ -115,6 +151,8 @@
     outline: none;
     height: 40px;
     width: 100px;
+    
+    
 }
 
 .rec {
