@@ -10,15 +10,17 @@
     width: 304.008px;
     height: 512px;
 }
+.imagen {
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px;
 
-/* dar formato a los numeros de pie de pagina */
+  /* dar formato a los numeros de pie de pagina */
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 180px;
-
-}
 
 .pagination a {
     width: 44px;
