@@ -37,3 +37,7 @@ section article p{
     padding-top: 5px;
     width: 458px;
 }
+
+img{
+    width: 100%;
+}
