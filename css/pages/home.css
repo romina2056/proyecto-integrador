@@ -9,21 +9,21 @@
     padding-top: 10.5em;
 }
 
-.ultimos-lanzamientos {
+h2 {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
     text-transform: uppercase;
     font-style: normal;
 }
 
-.saga-productos {
+h3 {
     font-size: var(--font-jumbo);
     width: 441px;
     text-transform: uppercase;
     font-style: normal;
 }
 
-.nombre-producto {
+h4 {
     font-family: var(--base-font);
     font-size: 18px;
     font-weight: 700;
@@ -31,6 +31,10 @@
     font-style: normal;
     padding-left: 13px;
 }
+
+
+
+
 
 #primer-tex {
     color: var(--dark-bg-solid);
@@ -62,3 +66,4 @@
     height: 3px;
     background: var(--primary-solid);
 }
+

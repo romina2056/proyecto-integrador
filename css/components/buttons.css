@@ -1,3 +1,4 @@
+/* botones */
 /* boton fondo blanco letras negras */
 .boton-shop {
     cursor: pointer;
@@ -32,5 +33,6 @@
     height: 30px;
     background: var(--primary-solid);
     border: var(--primary-solid);
-    color: var(--light-font-solid);  
+    color: var(--light-font-solid);
+    
 }

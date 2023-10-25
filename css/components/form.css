@@ -1,5 +1,6 @@
 /* Configuración main de tienda flex box horizontal de izq a der*/
 .texto-ima {
+
     display: flex;
     flex-flow: row;
     align-items: center;
