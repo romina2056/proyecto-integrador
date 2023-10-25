@@ -6,6 +6,29 @@
     font-family: var(--alternative-font)
 }
 
+/* configuración de las dos columnas de aside e items del shop */
+.texto-imaBusqueda {
+    display: grid;
+    grid-template-columns: 243px 960px;
+    margin-top: 68px;
+
+
+
+}
+
+.texto-imaBusqueda aside {
+    grid-column: 1 / 2;
+
+}
+
+
+
+.texto-imaBusqueda div {
+    grid-column: 2 / 3;
+    margin-left: 10px;
+}
+
+
 /* Configuración main de tienda flex box horizontal de der a izq*/
 .texto-ima-rev {
     display: flex;
@@ -19,9 +42,9 @@
     display: flex;
     flex-flow: row;
     align-items: center;
-    gap: 71, 55px;
+    gap: 71px;
     margin-top: 57px;
-    margin-right: 71, 55px;
+   
     margin-bottom: 68px;
     font-family: var(--base-font);
 }
