@@ -33,12 +33,13 @@
     --font-small: 1.6em;
     --font-xsmall: 1.4em;
     /* spacings*/
-    --spacing-128: 12.8res;
-    --spacing-68: 6.8res;
-    --spacing-36: 3.6res;
-    --spacing-28: 2.8res;
-    --spacing-24: 2.4res;
-    --spacing-16: 1.6res;
-    --spacing-12: 1.2res;
-    --spacing-8: 0.8res;
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-48: 4.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
 }

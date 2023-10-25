@@ -137,6 +137,7 @@ select {
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;
+    color: #919EAB;
     }
     select::-ms-expand {
     display: none; /*Evita que se muestre la flecha por defecto en versiones de IE*/
