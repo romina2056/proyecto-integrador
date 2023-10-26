@@ -1,0 +1,22 @@
+.lista-item{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-family: var(--base-font);
+  justify-content: center;
+  margin: 40px;
+  padding: 30px;
+}
+
+.prod-rel{
+  font-size: 46px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.item-segSecc{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 30px;
+}

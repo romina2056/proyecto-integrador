@@ -15,7 +15,6 @@
                         alt="Isologotipo de la marca funkoshop"></a>
             </picture>
             <ul>
-
                 <li><a href="../../pages/shop/shop.html">SHOP</a></li>
                 <li> <a href="../../pages/admin/register.html">CONTACTO</a></li>
                 <li> <a href="../../pages/admin/login.html">LOGIN</a></li>
@@ -24,58 +23,36 @@
         </nav>
     </header><!--fin header-->
     <main>
-        <section>
-            <ARTICLE>
-                <picture>
-                    <img src="../../img/star-wars/baby-yoda-1.webp" alt="Figura Funko Pop Grogu - The Mandalorian"/>
-                </picture>
-                <section>
-                    <h4>STAR WARS</h4>
-                    <h3>BABY YODA BLUEBALL</h3>
-                    <p>
-                        Figura coleccionable de Baby Yoga (Grogu) - The Mandalorian Saga,
-                        edición limitada.
-                    </p>
-                    <p>$1799,99</p>
+        <ul class="lista-item">
+            <li class="imagen-yoda">
+                <p class='img-card-yoda'  style="width: 550px; background-size: 108%" alt="Figura Funko Pop Grogu - The Mandalorian"></p>
+            </li>
+            <li class="texto-yoda">
+                <h4>STAR WARS</h4>
+                <h3>BABY YODA BLUEBALL</h3>
+                <p>
+                Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga,
+                edición limitada.
+                </p>
+                <p>$1799,99</p>
                     <input type="number" />
-        
-                    <!-- opcion1 -->
-                    <!-- <button type="button">
-                        <span>
-                            +
-                        </span>
-                    </button>
-                    <button type="button">
-                        <span>
-                            -
-                        </span>
-                    </button>
-                    <button type="button">
-                        <span>
-                            Agregar a carrito
-                        </span>
-                    </button> -->
-        
-                    <!-- opcion2 -->
                     <input type="button" value="+" />
                     <input type="button" value="-" />
                     <input type="submit" value="Agergar al carrito" />
-        
-                    <a href=""><p> Ver métodos de pago
-                    - 3 CUOTAS SIN INTERÉS</p></a>
-                </section>
-               
-           </ARTICLE>
-       </section><!--fin primera seccion-->
-       <section>
+                <a href=""><p> Ver métodos de pago- 3 CUOTAS SIN INTERÉS</p></a>
+            </li>
+        </ul>
+
+<!--fin primera seccion-->
+    <section>
         <!--inicio cuarta seccion -->
-        <h2>PRODUCTOS RELACIONADOS</h2>
-        <ul>
+        <h2 class="prod-rel">PRODUCTOS RELACIONADOS</h2>
+        <ul class="item-segSecc">
             <div>
                 <!--inicio cuarta seccion primer articulo-->
                 <a href="">
                     <div>
-                        <img src="../../img/star-wars/trooper-1.webp" alt="figura coleccionable star Wars">
+                        <p class="img-card-wars"></p>
                         <p>STAR WARS</p>
                         <h4>STORMTROOPER LIGHTSABER</h4>
                         <p>$ 1799,99</p>
@@ -87,9 +64,7 @@
             <div>
                 <!--inicio cuarta seccion segundo articulo-->
                 <a href="">
-                    <picture>
-                        <img src="../../img/pokemon/pidgeotto-1.webp" alt="figura coleccionable pidgeotto de pokemon">
-                    </picture>
+                        <p class="img-card-pokemon"></p>
                     <div>
                         <p>POKEMON</p>
                         <h4>PIDGEOTTO</h4>
@@ -103,7 +78,7 @@
                 <!--inicio cuarta seccion tercer articulo-->
                 <a href="">
                     <picture>
-                        <img src="../../img/harry-potter/luna-1.webp" alt="figura coleccionable luna de harry POTTER">
+                        <p class="img-card-potter"></p>
                     </picture>
                     <div>
                         <p>HARRY POTTER</p>
@@ -118,7 +93,7 @@
     </section>
 
     </main>
-   
+
     <footer><!--inicio footer seccion -->
         <nav class="container">
             <img src="../../img/branding/isotype.svg" alt="isotipo de la marca funco.com">
