@@ -61,6 +61,24 @@
     color: black;
 }
 
+.boton-atras{
+    background-color: #ccc;
+    border-radius: 3px;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.boton-sig{
+
+    color: #615c5c9e;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+
 aside section div p {
     font-family: Inter;
     font-size: 24px;
