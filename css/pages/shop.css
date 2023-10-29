@@ -59,23 +59,29 @@
     margin: 10px;
     padding: 10px;
     color: black;
+    
 }
 
 .boton-atras{
+    width: 44px;
+height: 44px;
+text-align: center;
     background-color: #ccc;
     border-radius: 3px;
     color: #fff;
-    padding: 8px 20px;
+    margin-right: 8px;
     font-size: 20px;
     font-family: Arial;
 }
 
 .boton-sig{
-
+width: 44px;
+height: 44px;
     color: #615c5c9e;
-    padding: 8px 20px;
+    text-align: center;
     font-size: 20px;
     font-family: Arial;
+    margin-left: 3px;
 }
 
 
