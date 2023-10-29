@@ -5,7 +5,7 @@
   font-family: var(--base-font);
   justify-content: center;
   margin: 40px;
-  padding: 30px;
+  gap: 30px;
 }
 
 .prod-rel{
@@ -14,9 +14,62 @@
   padding: 20px;
 }
 
-.item-segSecc{
+
+#tituloStar{
+  color: var(--dark-bg-solid);
+font-family: var(--base-font);
+font-size: var(--font-small);
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 11px;
+}
+#babyYoda{
+  color: var(--dark-solid);
+font-family: var(--base-font);
+font-size: var(-font-jumbo);
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 16px;
+}
+#descripYoda{
+  color: var(--dark-bg-solid);
+font-family: var(--base-font);
+font-size: var(--font-large);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 16px;
+}
+.inputYoda{
+  max-width: 105.467px;
+  height: 35.241px;
+  
+  background-image: url(../../img/icons/Group\ 116.svg);
+  background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y:center;
+    border: 0.5px solid var(--gray);
+   
+}
+.btn_Yoda1 {
   display: flex;
-  justify-content: center;
-  margin: 30px;
-  padding: 30px;
+    width: 18px;
+  height: 16px;
+  padding: 2px;
+  align-items: center;
+  background: #4F4F4F;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y:center;
+    gap: 5px;
+}
+.cantItems {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 8px;
+  height: 37.9px;
+ margin-bottom: 29.7px;
 }

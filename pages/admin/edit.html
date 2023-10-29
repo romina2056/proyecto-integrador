@@ -20,67 +20,62 @@
                 <li><a href="../../index.html" class="list-HOME">VER TIENDA</a></li>
                 <li> <a href="./admin.html" class="list-admin">ADMIN</a></li>
                 <li> <a href="../../index.html" class="list-login">SALIR</a></li>
-             
+
             </ul>
         </nav>
     </header><!--fin header-->
-    <main><!--inicio cuerpo principal-->
+    <main class="container"><!--inicio cuerpo principal-->
 
         <section> <!--Inicio de primera fila-->
             <span class="edit-header">
                 <h2>EDITAR ITEM</h2>
             </span>
         </section><!--fin de la primera fila-->
-        <section><!--inicio de la segunda fila-->
-            <div>
-                <form action="#">
-                    <label for="categoria">Categoría:</label>
-                    <select id="categoria" name="categoria">
-
-                        <option value="#">Figuras</option>
-                        <option value="#">seleccionar</option>
-                        <option value="#">seleccionar</option>
-                    </select>
-                </form>
-            </div>
-            <div>
-                <form action="#">
-                    <label for="Licencia">Licencia:</label>
-                    <select id="Licencia" name="Licencia">
-
-                        <option value="#">Naruto Shippuden</option>
-                        <option value="#">seleccionar</option>
-                        <option value="#">seleccionar</option>
-                    </select>
-                </form>
-            </div>
-        </section><!--fin de la segunda fila-->
-        <section><!--inicio de la tercera fila-->
+        <section class="formItem"><!--inicio de la segunda fila-->
             <form action="#">
-                <label for="nombre del producto">Nombre del producto:</label>
-                <input type="text" name="producto" value="Kakashi Hatake Shippuden Saga">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+
+                    <option value="#">Figuras</option>
+                    <option value="#">seleccionar</option>
+                    <option value="#">seleccionar</option>
+                </select>
+            </form>
+            <form action="#">
+                <label for="Licencia">Licencia:</label>
+                <select id="Licencia" name="Licencia">
+
+                    <option value="#">Naruto Shippuden</option>
+                    <option value="#">seleccionar</option>
+                    <option value="#">seleccionar</option>
+                </select>
+            </form>
+        </section><!--fin de la segunda fila-->
+        <section ><!--inicio de la tercera fila-->
+            <form action="#">
+                <label for="nombre del producto" class="catalogoItem" >Nombre del producto:</label>
+                <input class="catalogoItemOk" type="text" name="producto" value="Kakashi Hatake Shippuden Saga">
             </form>
         </section><!--fin de la tercera fila-->
         <section><!--inicio de la cuarta fila-->
-            <textarea name="comentario" rows="10"
-                cols="40">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.  </textarea>
+            <textarea class="caracteProduc" name="comentario" rows="10" cols="40">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.  </textarea>
         </section><!--fin de la cuarta fila-->
-        <section><!--inicio de la quinto fila-->
+        <section style="margin-top: 19px"><!--inicio de la quinto fila-->
             <form action="#">
-                <label for="sku">SKU:</label>
-                <input type="text" name="sku" value="NAR001012">
-                <label for="precio">Precio:</label>
-                <input type="text" name="precio" value="$ 1.799,00">
-                <label for="stock:">Stock:</label>
-                <input type="text" name="stock:" value="10">
+                <label class="catalogoItem" for="sku">SKU:</label>
+                <input class="cataLog" style="max-width: 130px" type="text" name="sku" value="NAR001012">
+                <label class="catalogoItem" style="margin-left: 56.48px" for="precio">Precio:</label>
+                <input class="cataLog" style="max-width: 130px" type="text" name="precio" value="$ 1.799,00">
+                <label class="catalogoItem" style="margin-left: 56.48px"for="stock:">Stock:</label>
+                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="stock:" value="10">
             </form>
         </section><!--fin de la quinto fila-->
-        <section><!--inicio de la sexta fila-->
+        <section style="margin-top: 51.58px; margin-bottom: 51.58px;"><!--inicio de la sexta fila-->
             <form action="#">
-                <label for="descuento">Descuento:</label>
-                <input type="text" name="descuento" value="10%">
-                <label for="cuotas">Cuotas:</label>
-                <select id="cuotas" name="Licencia">
+                <label class="catalogoItem" for="descuento">Descuento:</label>
+                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="descuento" value="10%">
+                <label class="catalogoItem" style="margin-left: 15px" for="cuotas">Cuotas:</label>
+                <select class="selectCuotas" id="cuotas" name="Licencia">
 
                     <option value="#">6 Cuotas sin interés</option>
                     <option value="#">seleccionar</option>
@@ -90,19 +85,19 @@
         </section><!--fin de la sexta fila-->
         <section><!--inicio de la septimo fila-->
             <form action="#">
-                <label for="imagen">Imágenes:</label>
+                <label class="catalogoItem" for="imagen">Imágenes:</label>
                 <input type="file" id="imagen" name="imagen" multiple>
             </form>
-            <section>
+            <section class="itemParaAgregar" >
                 <article>
-                    <img src="../../img/naruko/Naruto-Shippuden-Young-konoha-aldea-figura.png"
+                    <img class="item_img_edit" src="../../img/naruko/Naruto-Shippuden-Young-konoha-aldea-figura.png"
                         alt="Figura de funkos de naruko de frente">
-                    <p>Frente</p>
+                    <p class="descripIman">Frente</p>
                 </article>
                 <article>
-                    <img src="../../img/naruko/Naruto-Shippuden-Young-konoha-aldea-figura-box.jpg"
+                    <img class="item_img_edit" src="../../img/naruko/Naruto-Shippuden-Young-konoha-aldea-figura-box.jpg"
                         alt="Figura de funkos de naruko de dorso">
-                    <p>Dorso</p>
+                    <p class="descripIman">Dorso</p>
                 </article>
             </section>
         </section><!--fin de la septimo fila-->

@@ -143,17 +143,7 @@ line-height: normal;
 
 
 
-.boton {
-    border: none;
-    border-radius: 0%;
-    background-color: var(--primary-solid);
-    color: var(--light-bg-solid);
-    outline: none;
-    height: 40px;
-    width: 100px;
-    
-    
-}
+
 
 .rec {
     /* text-align: center; */

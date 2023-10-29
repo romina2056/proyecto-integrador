@@ -156,7 +156,8 @@ aside section div p {
 select {
     background-image: url(../../img/icons/material-symbols_arrow-drop-down-rounded.svg); /*aquí deberás escribir la ruta de la imagen que utilizarás como flecha del desplegable*/
     background-repeat: no-repeat;
-    background-position: 200px ;
+    background-position-x: 95%;
+    background-position-y:center;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;

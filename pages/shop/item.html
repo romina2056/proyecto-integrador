@@ -7,6 +7,7 @@
     <title>Item</title>
     <link rel="stylesheet" href="../../css/index.css">
 </head>
+
 <body>
     <header><!--inicio header-->
         <nav class="container">
@@ -18,79 +19,84 @@
                 <li><a href="../../pages/shop/shop.html">SHOP</a></li>
                 <li> <a href="../../pages/admin/register.html">CONTACTO</a></li>
                 <li> <a href="../../pages/admin/login.html">LOGIN</a></li>
-                <li><a href="../../pages/shop/cart.html"> <img src="../../img/icons/cart-icon.svg" alt="icono de carrito"> </a> </li>
+                <li><a href="../../pages/shop/cart.html"> <img src="../../img/icons/cart-icon.svg"
+                            alt="icono de carrito"> </a> </li>
             </ul>
         </nav>
     </header><!--fin header-->
-    <main>
+    <main class="container">
         <ul class="lista-item">
             <li class="imagen-yoda">
-                <p class='img-card-yoda'  style="width: 550px; background-size: 108%" alt="Figura Funko Pop Grogu - The Mandalorian"></p>
+                <p class='img-card-yoda' style="width: 550px; background-size: 108%"
+                    alt="Figura Funko Pop Grogu - The Mandalorian"></p>
             </li>
-            <li class="texto-yoda">
-                <h4>STAR WARS</h4>
-                <h3>BABY YODA BLUEBALL</h3>
-                <p>
-                Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga,
-                edición limitada.
+            <li>
+                <h4 id="tituloStar">STAR WARS</h4>
+                <h3 id="babyYoda">BABY YODA BLUEBALL</h3>
+                <p id="descripYoda">
+                    Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga,
+                    edición limitada.
                 </p>
-                <p>$1799,99</p>
-                    <input type="number" />
-                    <input type="button" value="+" />
-                    <input type="button" value="-" />
-                    <input type="submit" value="Agergar al carrito" />
-                <a href=""><p> Ver métodos de pago- 3 CUOTAS SIN INTERÉS</p></a>
+                <p id="descripYoda">$1799,99</p>
+                <div class="cantItems">
+                    <div class="inputYoda">
+                        <input type="number" class="inputYoda">
+                    </div>
+                    <div> 
+                        <input type="button" class="btn_Yoda1" style="margin-bottom: 5px; background-image: url(../../img/icons/+.svg)">
+                        <input type="button" class="btn_Yoda1" style="background-image: url(../../img/icons/-.svg)">
+                    </div>
+                    <div> <input class="boton" style="width: 181px; height: 37.91px;" type="submit" value="Agrergar al carrito"></div>
+            
+                </div>
+                
+
+                <a href="">
+                    <p id="tercer-tex" style="font-size: 17px;"> Ver métodos de pago- 3 CUOTAS SIN INTERÉS</p>
+                </a>
             </li>
         </ul>
 
-<!--fin primera seccion-->
-    <section>
-        <!--inicio cuarta seccion -->
-        <h2 class="prod-rel">PRODUCTOS RELACIONADOS</h2>
-        <ul class="item-segSecc">
-            <div>
-                <!--inicio cuarta seccion primer articulo-->
-                <a href="">
-                    <div>
-                        <p class="img-card-wars"></p>
-                        <p>STAR WARS</p>
-                        <h4>STORMTROOPER LIGHTSABER</h4>
-                        <p>$ 1799,99</p>
-                        <p>3 CUOTAS SIN INTERÉS</p>
-                    </div>
-                </a>
-            </div>
-            <!--fin cuarta seccion primer articulo-->
-            <div>
-                <!--inicio cuarta seccion segundo articulo-->
-                <a href="">
-                        <p class="img-card-pokemon"></p>
-                    <div>
-                        <p>POKEMON</p>
-                        <h4>PIDGEOTTO</h4>
-                        <p>$ 1799,99</p>
-                        <p>3 CUOTAS SIN INTERÉS</p>
-                    </div>
-                </a>
-                <!--fin cuarta seccion segundo articulo-->
-            </div>
-            <div>
-                <!--inicio cuarta seccion tercer articulo-->
-                <a href="">
-                    <picture>
-                        <p class="img-card-potter"></p>
-                    </picture>
-                    <div>
-                        <p>HARRY POTTER</p>
-                        <h4>LUNA LOVEGOOD LION MASK</h4>
-                        <p>$ 1799,99</p>
-                        <p>3 CUOTAS SIN INTERÉS</p>
-                    </div>
-                </a>
-                <!--fin cuarta seccion tercer articulo-->
-            </div>
-        </ul>
-    </section>
+        <!--fin primera seccion-->
+        <section>
+            <!--inicio cuarta seccion -->
+            <h2 class="prod-rel">PRODUCTOS RELACIONADOS</h2>
+            <ul class="texto-ima-3">
+                <li><!--inicio cuarta seccion primer articulo-->
+                    <a href="">
+                        <div>
+                            <p class="img-card-wars"><input type=button class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">STAR WARS</p>
+                            <h4 style="margin-bottom: 13.9px">STORMTROOPER LIGHTSABER</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </li> <!--fin cuarta seccion primer articulo-->
+                <li> <!--inicio cuarta seccion segundo articulo-->
+                    <a href="">
+                        <div>
+                            <p class="img-card-pokemon"><input type=button class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">POKEMON</p>
+                            <h4 style="margin-bottom: 13.9px">PIDGEOTTO</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>    
+                </li>  <!--fin cuarta seccion segundo articulo-->
+                <li>
+                    <a href="">
+                        <div>
+                            <p class="img-card-potter"><input type=button class="boton-nuevo" value="NUEVO"></p>
+                            <p id="primer-tex">HARRY POTTER</p>
+                            <h4 style="margin-bottom: 13.9px">LUNA LOVEGOOD LION MASK</h4>
+                            <p id="segundo-tex">$ 1799,99</p>
+                            <p id="tercer-tex">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>     <!--fin cuarta seccion tercer articulo-->
+                </li>
+            </ul>
+        </section>
 
     </main>
 
