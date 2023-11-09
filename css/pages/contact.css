@@ -1,0 +1,77 @@
+.contacto {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contacto .cont_flex {
+    padding: 15px;
+    padding-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 2px #ffee33;
+}
+
+.info_contacto .tit_colum {
+    font-family: 'righteous', cursive;
+    font-weight: 100;
+}
+
+.info_contacto [class*="icon_"] {
+    font-size: 20ps;
+    margin-right: 9px;
+    position: relative;
+    top: 1px;
+}
+
+.info_contacto .social_icon {
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.info_contacto .social_icon [class*="icon_"] {
+    background-color: black;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.form {
+    padding: 10px;
+    padding-top: 0;
+}
+
+.form_label,.form_input_txt,.form_textarea {
+    display: block;
+    width: 100%;
+}
+
+.form_input_txt {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form_textarea {
+    margin-top: 10px;
+    min-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.form_btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.info_contacto .desc_colum {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
