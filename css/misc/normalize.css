@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
 }
 
 html {
@@ -22,10 +21,11 @@ a {
 header,
 footer {
     font-family: var(--alternative-font);
-    font-size: var(--font-medium);
+    font-size: var(--font-medium); 
     color: var(--light-font-solid);
     background-color: var(--dark-bg-solid);
-    padding: var(--spacing-36);
+    padding: var(--spacing-36); 
+    
 }
 img{
     width: 100%;
