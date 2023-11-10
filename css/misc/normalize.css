@@ -15,7 +15,6 @@ html {
 
 a {
     text-decoration: none;
-    font-size: 2em;
     font-family: inherit;
     color: inherit;
 }
@@ -23,8 +22,13 @@ a {
 header,
 footer {
     font-family: var(--alternative-font);
+    font-size: var(--font-medium);
     color: var(--light-font-solid);
     background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+img{
+    width: 100%;
 }
 
 ul,
