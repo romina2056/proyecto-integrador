@@ -108,10 +108,10 @@ align-items: start;
 .slider__items{
     display: flex;
     gap: var(--spacing-24);
+  
+    
 }
-.card-item{
-    /* background-color: #1D84B5; */
-}
+
 .card-item__cover{
     display: flex; 
     position: relative;   
