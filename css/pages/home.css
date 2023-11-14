@@ -103,6 +103,7 @@
     background-color: var(--primary-900);
 }
 
+<<<<<<< Updated upstream
 /* slider */
 .slider {
     display: flex;
@@ -121,6 +122,9 @@
     display: flex;
     gap: var(--spacing-24);
 }
+=======
+
+>>>>>>> Stashed changes
 
 .slider__item {
     width: 390px;
