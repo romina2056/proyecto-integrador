@@ -24,6 +24,7 @@
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
+    z-index: 3;
 }
 .navbar__link:hover{
     background-color: var(--primary-900);
