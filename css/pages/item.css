@@ -27,13 +27,21 @@
 #babyYoda {
   color: var(--dark-solid);
 font-family: var(--base-font);
-font-size: var(-font-jumbo);
+font-size: var(--font-jumbo);
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 margin-bottom: 16px;
 }
-
+#descrip__price {
+  color: var(--dark-bg-solid);
+font-family: var(--base-font);
+font-size: var(--font-jumbo);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 16px;
+}
 #descripYoda {
   color: var(--dark-bg-solid);
 font-family: var(--base-font);
