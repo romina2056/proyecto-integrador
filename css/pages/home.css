@@ -6,7 +6,7 @@
     background-attachment: fixed;
     position: relative;
     top: 0;
-    z-index: -1;
+    
   }
 .hero::before{
     content: '';
@@ -47,11 +47,13 @@ padding: var(--spacing-12) var(--spacing-68);
 border-radius:50px ;
 font-weight: 500;
 transition: all .3s ease-in-out;
+z-index: 4;
 }
 
 .hero__link:hover {
     background-color: var(--primary-900);
    color: var(--light-font-solid);
+   z-index: 4;
 }
 
 .collection {
