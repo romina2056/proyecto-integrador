@@ -108,7 +108,10 @@ align-items: start;
 .slider__items{
     display: flex;
     gap: var(--spacing-24);
-  
+    
+}
+.slider__item{
+   width: 390px;
     
 }
 
