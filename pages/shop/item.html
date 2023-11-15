@@ -46,12 +46,12 @@
                 <p class='img-card-yoda' style="width: 550px; background-size: 108%" alt="Figura Funko Pop Grogu - The Mandalorian"></p>
             </li>
             <li>
-                <h4 id="tituloStar">STAR WARS</h4>
-                <h3 id="babyYoda">BABY YODA BLUEBALL</h3>
-                <p id="descripYoda">
+                <h3 class="tituloStar">STAR WARS</h3>
+                <h4 class="babyYoda">BABY YODA BLUEBALL</h4>
+                <p class="descripYoda">
                     Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.
                 </p>
-                <p id="descrip__price">$ 1799,99</p>
+                <p class="descrip__price">$ 1799,99</p>
                 <div class="cantItems">
                     <div class="inputYoda">
                         <input type="number" class="inputYoda">
@@ -62,12 +62,12 @@
                     </div>
                     <div> <input class="boton" style="width: 181px; height: 37.91px;" type="submit" value="Agrergar al carrito"></div>
                 </div>
-
                 <a href="">
                     <p class="card-item__promo" style="font-size: 17px;"> Ver métodos de pago- 3 CUOTAS SIN INTERÉS</p>
                 </a>
             </li>
         </ul><!-- fin item -->
+
         <section class="slider container glide "><!-- inicio slider -->
             <h2 class="prod-rel">PRODUCTOS RELACIONADOS</h2>
             <div class="glide__track" data-glide-el="track">
@@ -77,10 +77,8 @@
                             <a class="card-item__link" href="../shop/item.html">
                                 <picture class="card-item__cover">
                                     <span class="card-item__tag">NUEVO</span>
-                                    <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp"
-                                        alt="figura coleccionable funko star wars trooper">
-                                    <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp"
-                                        alt="figura coleccionable funko star wars trooper box">
+                                    <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="figura coleccionable funko star wars trooper">
+                                    <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="figura coleccionable funko star wars trooper box">
                                 </picture>
                                 <div class="card-item__content">
                                     <p class="card-item__licence">STAR WARS</p>
@@ -97,10 +95,8 @@
                             <a class="card-item__link" href="../shop/item.html">
                                 <picture class="card-item__cover">
                                     <span class="card-item__tag">NUEVO</span>
-                                    <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp"
-                                        alt="figura coleccionable funko pokemon pidgeotto">
-                                    <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp"
-                                        alt="figura coleccionable funko pokemon pidgeotto box">
+                                    <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="figura coleccionable funko pokemon pidgeotto">
+                                    <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="figura coleccionable funko pokemon pidgeotto box">
                                 </picture>
                                 <div class="card-item__content">
                                     <p class="card-item__licence">POKEMON</p>
@@ -117,10 +113,8 @@
                             <a class="card-item__link" href="../shop/item.html">
                                 <picture class="card-item__cover">
                                     <span class="card-item__tag">NUEVO</span>
-                                    <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp"
-                                        alt="figura coleccionable funko Harru-potter luna">
-                                    <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp"
-                                        alt="figura coleccionable funko Harru-potter luna box">
+                                    <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp" alt="figura coleccionable funko Harru-potter luna">
+                                    <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp" alt="figura coleccionable funko Harru-potter luna box">
                                 </picture>
                                 <div class="card-item__content">
                                     <p class="card-item__licence">HARRY POTTER</p>
@@ -128,15 +122,15 @@
                                     <p class="card-item__price">$ 1799,99</p>
                                     <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                                 </div>
-                            </a> <!-- fin cuarta seccion tercer articulo -->
+                            </a> 
                         </article>
-                    </li>
+                    </li><!-- fin cuarta seccion tercer articulo -->
                 </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
                 <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="ic:round-chevron-left"></iconify-icon></button>
                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="ic:round-chevron-right"></iconify-icon></button>
-              </div>
+            </div>
         </section>
     </main>
 
@@ -151,23 +145,23 @@
         </nav>
         <p style="font-size: 20px;">All rights reserved 2023 - Funkoshop &copy</p>
     </footer><!-- fin footer seccion -->
+
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-        new Glide('.glide',{
+        new Glide('.glide', {
             type: 'carousel',
             startAt: 0,
             perView: 3,
             gap: 30,
-            breakpoint:{
-                991:{
-                perView:2
+            breakpoint: {
+                991: {
+                    perView: 2
                 },
-                768:{
+                768: {
                     perView: 1
                 }
             }
-
         }).mount()
     </script>
 </body>
