@@ -102,7 +102,16 @@ z-index: 4;
 .collection__link:hover {
     background-color: var(--primary-900);
 }
-
+.card-item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.card-item__link{
+    display: flex;
+    flex-direction: column;
+}
 .card-item__cover {
     display: flex;
     position: relative;

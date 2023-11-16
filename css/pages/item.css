@@ -53,13 +53,12 @@ margin-bottom: 16px;
 }
 
 .inputYoda {
+  text-align: center;
+  font-size: var(--font-small);
+  display: flex;
   max-width: 105.467px;
   height: 35.241px;
-  background-image: url(../../img/icons/Group\ 116.svg);
-  background-repeat: no-repeat;
-  background-position-x: 50%;
-  background-position-y: center;
-  border: 0.5px solid var(--gray);
+   border: 0.5px solid var(--gray);
 }
 
 .btn_Yoda1 {
