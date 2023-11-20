@@ -9,49 +9,49 @@
 }
 
 .prod-rel {
-  font-size: var(--font-display);
+  font-size: 46px;
   margin: 20px;
   padding: 20px;
 }
 
-.tituloStar {
+#tituloStar {
   color: var(--dark-bg-solid);
   font-family: var(--base-font);
   font-size: var(--font-small);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: var(--spacing-12);
+  margin-bottom: 11px;
 }
 
-.babyYoda {
+#babyYoda {
   color: var(--dark-solid);
   font-family: var(--base-font);
   font-size: var(--font-jumbo);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: var(--spacing-16);
+  margin-bottom: 16px;
 }
 
-.descrip__price {
+#descrip__price {
   color: var(--dark-bg-solid);
   font-family: var(--base-font);
   font-size: var(--font-jumbo);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: var(--spacing-16);
+  margin-bottom: 16px;
 }
 
-.descripYoda {
+#descripYoda {
   color: var(--dark-bg-solid);
   font-family: var(--base-font);
   font-size: var(--font-large);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: var(--spacing-16);
+  margin-bottom: 16px;
 }
 
 .inputYoda {
@@ -60,7 +60,7 @@
   display: flex;
   max-width: 105.467px;
   height: 35.241px;
-   border: 0.5px solid var(--gray);
+  border: 0.5px solid var(--gray);
 }
 
 .btn_Yoda1 {
@@ -82,5 +82,6 @@
   align-items: center;
   gap: 16px;
   height: 37.9px;
+
   margin-bottom: 29.7px;
 }
