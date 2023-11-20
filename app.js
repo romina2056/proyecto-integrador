@@ -3,8 +3,13 @@ const app = express();
 const mainRoutes = require('./src/routes/mainRoutes');
 const shopRoutes = require('./src/routes/shopRoutes');
 
-app.use(express.static('public'));
+// Middlewarea de configuración 
 
+app.use(express.static('public'));
+app.use(express.urlencoded());
+app.use(express.json());
+
+// routas
 app.use('/', mainRoutes);
 app.use('/shop', shopRoutes);
 
