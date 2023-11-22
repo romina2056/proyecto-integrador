@@ -11,7 +11,10 @@ router.get('edit/:id', (req, res) => res.send('Route for find and retrieve a pro
 router.put('edit/:id', (req, res) => {
     const {producto, comentario, sku, precio, stock} = req.body;
     res.send('se guardo su información')});
-router.delete('delete/:id',(req, res) => res.send('se elimino su producto ID'));
+router.delete('delete/:id',(req, res) => {
+    const { id } = req.params;
+
+    res.send(`Usted quiere eliminar su item: ${id}`)}),
 
 
 module.exports = router;

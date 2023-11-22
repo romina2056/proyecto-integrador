@@ -5,7 +5,7 @@ const authControllers = require('../controllers/auth.controllers');
 router.get('/login', authControllers.login);
 router.post('/login', (req, res) => {
     const {user, password} = req.body;
-    res.send('solicitud de login ' + user + password)});
+    res.redirect('/')});
 router.get('/register', authControllers.register);
 router.post('/register', (req, res) => {
     const {nombre, apellido, email, pwd} = req.body;
