@@ -4,18 +4,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
-"keywords": [],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
-    "express": "^4.18.2"    
+    "express": "^4.18.2",
+    "method-override": "^3.0.0"
   },
   "devDependencies": {
+    "jake": "^10.8.7",
     "nodemon": "^3.0.1"
   }
 }
-
