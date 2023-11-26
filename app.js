@@ -9,7 +9,7 @@ const authRoutes = require('./src/routes/auth.routes');
 
 // template Engines
 app.set('view engine', 'ejs');
-app.set('view', path.join(__dirname, "./src/views"));
+app.set('view', path.join(__dirname, "./src/view/home.ejs"));
 
 
 // Middlewarea de configuración 
@@ -29,4 +29,4 @@ app.use((req, res) => {
     res.status(404).send('La pagina que buscas no existe.');
 })
 
-app.listen(4001, () => console.log("servidor corriendo en http://localhost:4000"));
+app.listen(4000, () => console.log("servidor corriendo en http://localhost:4000"));
