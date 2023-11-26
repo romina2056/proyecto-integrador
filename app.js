@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require('path');
-const methodOverride = require('method-override')
+const methodOverride = require('method-override');
 const mainRoutes = require('./src/routes/main.routes');
 const shopRoutes = require('./src/routes/shop.routes');
 const adminRoutes = require('./src/routes/admin.routes');
@@ -29,4 +29,4 @@ app.use((req, res) => {
     res.status(404).send('La pagina que buscas no existe.');
 })
 
-app.listen(4000, () => console.log("servidor corriendo en http://localhost:4000"));
+app.listen(4001, () => console.log("servidor corriendo en http://localhost:4000"));

@@ -102,11 +102,6 @@
 display: flex;
 }
 
-.card-item__promo {
-  font-size: var(--font-medium);
-  text-align: center;
-}
-
 .formas {
   text-decoration: underline;
   padding-right: 5px;

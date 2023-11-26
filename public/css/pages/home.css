@@ -107,7 +107,7 @@ z-index: 4;
     grid-template-columns: repeat(3,1fr);
     gap: 24px;
     margin-bottom: 24px;
-    
+       
 }
 .card-item__link{
     display: flex;
@@ -149,8 +149,8 @@ z-index: 4;
     flex-direction: column;
     gap: var(--spacing-12);
     padding: var(--spacing-16);
+    text-align: start;
 }
-
 .card-item__licence {
     font-size: var(--font-xsmall);
     font-weight: 500;
@@ -169,6 +169,7 @@ z-index: 4;
     font-size: var(--font-xsmall);
     color: var(--secondary-solid);
     font-weight: 500;
+    text-align: start;
 }
 
 @keyframes fade {
