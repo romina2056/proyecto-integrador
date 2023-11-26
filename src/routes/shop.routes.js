@@ -13,6 +13,4 @@ router.post('/cart', (req, res) => {
     const {cantElemento, subtotal, envio, total} = req.body;
     res.send('su total a pagar ' + total);
 });
-
-
 module.exports = router;
