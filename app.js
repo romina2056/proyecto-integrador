@@ -12,8 +12,8 @@ const adminRoutes = require('./src/routes/admin.routes');
 const authRoutes = require('./src/routes/auth.routes');
 
 // template Engines
-// app.set('view engine', 'ejs');
-// app.set('views', path.join(__dirname, "./src/views"));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, "./src/views"));
 
 
 // Middlewarea de configuración 

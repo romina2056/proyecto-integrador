@@ -4,9 +4,7 @@ const adminControllers = require('../controllers/admin.controllers');
 
 router.get('/', adminControllers.admin);
 router.get('/create', adminControllers.create);
-router.post('/create', (req, res) => {
-    const {categoria, licencia, nombreProducto} = req.body;
-    res.send('su nuevo producto es ' + nombreProducto)});
+router.post('/create', adminControllers.createItem);
 router.get('edit/:id', (req, res) => {
     const { id } = req.params;
     res.send('Route for find and retrieve a product from an ID')});
