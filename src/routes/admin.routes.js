@@ -5,16 +5,9 @@ const adminControllers = require('../controllers/admin.controllers');
 router.get('/', adminControllers.admin);
 router.get('/create', adminControllers.create);
 router.post('/create', adminControllers.createItem);
-router.get('edit/:id', (req, res) => {
-    const { id } = req.params;
-    res.send('Route for find and retrieve a product from an ID')});
-router.put('edit/:id', (req, res) => {
-    const { id } = req.params;
-    res.send('se guardo su información')});
-router.delete('delete/:id',(req, res) => {
-    const { id } = req.params;
-
-    res.send(`Usted quiere eliminar su item: ${id}`)}),
+router.get('edit/:id', adminControllers.editView);
+router.put('edit/:id', adminControllers.editDate);
+router.delete('delete/:id', adminControllers.delete);
 
 
 module.exports = router;
