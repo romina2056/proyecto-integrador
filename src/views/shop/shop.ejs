@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funkoshop | Shop</title>
-    <link rel="stylesheet" href="../../css/index.css">
-    <link rel="icon" href="../../img/branding/isotype.svg">
-</head>
-
-<body>
-    <header><!-- inicio header -->
-        <nav class="container navbar">
-            <picture class="navbar__logo">
-                <a href="../../index.html"><img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkoshop"></a>
-            </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item with__submenu">
-                    <a class="navbar__link with_icon" href="../shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Llaveros</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navbar__item"> <a class="navbar__link" href="../shop/contact.html">CONTACTO</a></li>
-                <li class="navbar__item"> <a class="navbar__link" href="../admin/login.html">LOGIN</a></li>
-                <li> <a href="../shop/cart.html"><img src="../../img/icons/cart-icon.svg" alt="icono de carrito"></a>
-                </li>
-            </ul>
-        </nav>
-    </header><!-- fin header -->
-
+<%- include('../partials/header.ejs') %>
     <main class="container texto-imaBusqueda"><!-- inicio del cuerpo principal del shop -->
         <aside>
             <section class="buscar">
@@ -96,87 +57,38 @@
 
         <div>
             <ul class="slider__items card-item">
-                <li class="slider__item"><!-- inicio cuarta seccion primer articulo -->
-                    <article >
-                        <a class="card-item__link" href="../../pages/shop/item.html">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="figura coleccionable funko star wars trooper">
-                                <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="figura coleccionable funko star wars trooper box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">STAR WARS</p>
-                                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
-                                <p class="card-item__price">$ 1799,99</p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li><!-- fin cuarta seccion primer articulo -->
-
-                <li class="slider__item"><!-- inicio cuarta seccion segundo articulo -->
-                    <article >
-                        <a class="card-item__link" href="../../pages/shop/item.html">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="figura coleccionable funko pokemon pidgeotto">
-                                <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="figura coleccionable funko pokemon pidgeotto box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">POKEMON</p>
-                                <h4 class="card-item__name">PIDGEOTTO</h4>
-                                <p class="card-item__price">$ 1799,99</p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li><!-- fin cuarta seccion segundo articulo -->
-                
-                <li class="slider__item"><!-- inicio cuarta seccion tercer articulo -->
-                    <article >
-                        <a class="card-item__link" href="../../pages/shop/item.html">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp" alt="figura coleccionable funko Harru-potter luna">
-                                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp" alt="figura coleccionable funko Harru-potter luna box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">HARRY POTTER</p>
-                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
-                                <p class="card-item__price">$ 1799,99</p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li><!-- fin cuarta seccion tercer articulo -->
-            </ul>
-
-            <ul class="slider__items card-item">
+               <% data.forEach(item => { %>
                 <li class="slider__item "><!-- inicio cuarta seccion primer articulo -->
-                    <article >
-                        <a class="card-item__link" href="../../pages/shop/item.html">
+                    <article>
+                        <a class="card-item__link" href="/shop/item/<%= item.product_id %>">
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="figura coleccionable funko star wars trooper">
-                                <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="figura coleccionable funko star wars trooper box">
+                                <img class="card-item__img--front" src="<%= item.img_front %>"
+                                    alt="figura coleccionable funko star wars trooper">
+                                <img class="card-item__img--back" src="<%= item.img_back %>"
+                                    alt="figura coleccionable funko star wars trooper box">
                             </picture>
                             <div class="card-item__content">
-                                <p class="card-item__licence">STAR WARS</p>
-                                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
-                                <p class="card-item__price">$ 1799,99</p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                                <p class="card-item__licence"><%= item.licence_name %></p>
+                                <h4 class="card-item__name"><%= item.product_name %></h4>
+                                <p class="card-item__price">$ <%= item.product_price %></p>
+                                <p class="card-item__promo"><%= item.dues %> CUOTAS SIN INTERÉS</p>
                             </div>
                         </a>
                     </article>
                 </li><!-- fin cuarta seccion primer articulo -->
 
+ 
+<% }) %>
                 <li class="slider__item"><!-- inicio cuarta seccion segundo articulo -->
-                    <article >
+                    <article>
                         <a class="card-item__link" href="../../pages/shop/item.html">
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="figura coleccionable funko pokemon pidgeotto">
-                                <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="figura coleccionable funko pokemon pidgeotto box">
+                                <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp"
+                                    alt="figura coleccionable funko pokemon pidgeotto">
+                                <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp"
+                                    alt="figura coleccionable funko pokemon pidgeotto box">
                             </picture>
                             <div class="card-item__content">
                                 <p class="card-item__licence">POKEMON</p>
@@ -189,12 +101,14 @@
                 </li><!-- fin cuarta seccion segundo articulo -->
 
                 <li class="slider__item"><!-- inicio cuarta seccion tercer articulo -->
-                    <article >
+                    <article>
                         <a class="card-item__link" href="../../pages/shop/item.html">
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp" alt="figura coleccionable funko Harru-potter luna">
-                                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp" alt="figura coleccionable funko Harru-potter luna box">
+                                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp"
+                                    alt="figura coleccionable funko Harru-potter luna">
+                                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp"
+                                    alt="figura coleccionable funko Harru-potter luna box">
                             </picture>
                             <div class="card-item__content">
                                 <p class="card-item__licence">HARRY POTTER</p>
@@ -209,12 +123,14 @@
 
             <ul class="slider__items card-item"><!-- inicio cuarta seccion primer articulo -->
                 <li class="slider__item ">
-                    <article >
+                    <article>
                         <a class="card-item__link" href="../../pages/shop/item.html">
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp" alt="figura coleccionable funko star wars trooper">
-                                <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp" alt="figura coleccionable funko star wars trooper box">
+                                <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp"
+                                    alt="figura coleccionable funko star wars trooper">
+                                <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp"
+                                    alt="figura coleccionable funko star wars trooper box">
                             </picture>
                             <div class="card-item__content">
                                 <p class="card-item__licence">STAR WARS</p>
@@ -227,12 +143,14 @@
                 </li><!-- fin cuarta seccion primer articulo -->
 
                 <li class="slider__item"><!-- inicio cuarta seccion segundo articulo -->
-                    <article >
+                    <article>
                         <a class="card-item__link" href="../../pages/shop/item.html">
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="figura coleccionable funko pokemon pidgeotto">
-                                <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="figura coleccionable funko pokemon pidgeotto box">
+                                <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp"
+                                    alt="figura coleccionable funko pokemon pidgeotto">
+                                <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp"
+                                    alt="figura coleccionable funko pokemon pidgeotto box">
                             </picture>
                             <div class="card-item__content">
                                 <p class="card-item__licence">POKEMON</p>
@@ -245,12 +163,14 @@
                 </li><!-- fin cuarta seccion segundo articulo -->
 
                 <li class="slider__item"><!-- inicio cuarta seccion tercer articulo -->
-                    <article >
+                    <article>
                         <a class="card-item__link" href="../../pages/shop/item.html">
                             <picture class="card-item__cover">
                                 <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp" alt="figura coleccionable funko Harru-potter luna">
-                                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp" alt="figura coleccionable funko Harru-potter luna box">
+                                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp"
+                                    alt="figura coleccionable funko Harru-potter luna">
+                                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp"
+                                    alt="figura coleccionable funko Harru-potter luna box">
                             </picture>
                             <div class="card-item__content">
                                 <p class="card-item__licence">HARRY POTTER</p>
@@ -276,17 +196,8 @@
                 <button class="boton-sig"> > </button>
     </div><!--fin el indicador de paginas de shop -->
 
-    <footer><!--inicio footer seccion -->
-        <nav class="container">
-            <img src="../../img/branding/isotype.svg" alt="isotipo de la marca funco.com">
-            <ul>
-                <li><a href="../../pages/shop/shop.html">SHOP</a></li>
-                <li> <a href="../../pages/admin/login.html">INGRESAR</a>
-                <li><a href="../../pages/shop/contact.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <p style="font-size: 20px;">All rights reserved 2023 - Funkoshop &copy</p>
-    </footer><!--fin footer seccion -->
-    
-</body>
-</html>
+    <%- include('../partials/footer.ejs') %>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+        </body>
+
+        </html>
