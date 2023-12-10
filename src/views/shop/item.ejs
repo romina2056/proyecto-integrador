@@ -2,14 +2,14 @@
     <main class="container">
         <ul class="lista-item"><!-- inicio item -->
             <li class="card-item__cover">
-                <img class="card-item__img--front" src="<%= item.img_front %>" alt="<%= item.product_description %>">
-                <img class="card-item__img--back" src="<%= item.img_back %>" alt="<%= item.product_description %>">
+                <img class="card-item__img--front" src="/img<%=item.image_front%> " alt="<%= item.product_description %>">
+                <img class="card-item__img--back" src="/img<%=item.image_back%>" alt="<%= item.product_description %>">
             </li>
             <li>
                 <h3 class="tituloStar"><%= item.licence_name %></h3>
                 <h4 class="babyYoda"><%= item.product_name %></h4>
                 <p class="descripYoda"><%= item.product_description %> </p>
-                <p class="descrip__price">$<%= item.product_price %></p>
+                <p class="descrip__price">$<%= item.price %></p>
                 <div class="cantItems">
                     <button id="subtract" class="btn_Yoda1">-</button>
                     <input type="text" class="inputYoda" name="quantity" id="quantity" placeholder="0">

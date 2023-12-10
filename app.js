@@ -35,4 +35,4 @@ app.use('/', mainRoutes);
 //     res.status(404).send('La pagina que buscas no existe.');
 // })
 
-app.listen(4000, () => console.log("servidor corriendo en http://localhost:4000"));
+app.listen(3300, () => console.log("servidor corriendo en http://localhost:3300"));
