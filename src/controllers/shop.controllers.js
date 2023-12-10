@@ -9,8 +9,8 @@ const data = [
         product_price: 1799.99,
         dues: 10,
         product_sku: "PKM001002",
-        img_front: "/img/star-wars/luke-1.webp",
-        img_back: "/img/star-wars/luke-box.webp"
+        img_front: "/img/star-wars/baby-yoda-1.webp",
+        img_back: "/img/star-wars/baby-yoda-box.webp"
     },
     {
         product_id: 2,
@@ -21,8 +21,8 @@ const data = [
         product_price: 1799.99,
         dues: 10,
         product_sku: "PKM001003",
-        img_front: "/img/pokemon/dragonite-1.webp",
-        img_back: "/img/pokemon/dragonite-box.webp"
+        img_front: "/img/pokemon/vulpix-1.webp",
+        img_back: "/img/pokemon/vulpix-box.webp"
     },
     {
         product_id: 3,
@@ -119,6 +119,30 @@ const data = [
         product_sku: "PKM001008",
         img_front: "/img/pokemon/pikachu-1.webp",
         img_back: "/img/pokemon/pikachu-box.webp"
+    },
+    {
+        product_id: 11,
+        licence_name: "Harry Potter",
+        category_name: "Revive los recuerdos de una saga llena de magia y encanto.",
+        product_name: "Snape",
+        product_description: "Revive los recuerdos de una saga llena de magia y encanto.",
+        product_price: 1799.99,
+        dues: 10,
+        product_sku: "PKM001001",
+        img_front: "/img/harry-potter/snape-patronus-1.webp",
+        img_back: "/img/harry-potter/snape-patronus-box.webp"
+    },
+    {
+        product_id: 12,
+        licence_name: "Pokemon",
+        category_name: "Atrapa todos los que puedas y disfruta de una colección llena de amigos.",
+        product_name: "Pidgeotto",
+        product_description: "Atrapa todos los que puedas y disfruta de una colección llena de amigos.",
+        product_price: 1799.99,
+        dues: 10,
+        product_sku: "PKM001008",
+        img_front: "/img/pokemon/pidgeotto-1.webp",
+        img_back: "/img/pokemon/pidgeotto-box.webp"
     }
 ];
 const shopControllers = {
@@ -130,8 +154,12 @@ const shopControllers = {
         });
     },
     item: (req, res) => {
+        const itemId = req.params.id;
+        const item = data.find(item => item.product_id == itemId);
         res.render(path.resolve(__dirname, '../views/shop/item.ejs'), {
-            title: "ITEM"
+            title: "ITEM",
+            item,
+            data
         });
     },
     itemAdd: (req, res) => res.send('Esta es la ruta para agregar un nuevo item'),
@@ -143,4 +171,6 @@ const shopControllers = {
 
     addToCart: (req, res) => res.send('Esta es la ruta para agregar un nuevo item al carrito'),
 }
-module.exports = shopControllers;
+module.exports = 
+    shopControllers, 
+    data;

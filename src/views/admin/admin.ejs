@@ -2,126 +2,32 @@
 
     <main class="container">
         <article class="buscarItem">
-            <img src="../../img/icons/search_icon.svg" alt="icono de búsqueda" class="tamañoImagen">
+            <img src=" /img/icons/search_icon.svg" alt="icono de búsqueda" class="tamañoImagen">
             <input type="text" class="tipoCategoria" name="search" placeholder="código, nombre, categoría">
         </article>
         <article class="listProducto">
             <h2 class="alinearItem">LISTADO DE PRODUCTOS</h2>
             <h4 class="title_agregar">AGREGAR</h4>
-            <img class="img__mas" src="../../img/icons/mdi_plus-box.svg" alt="simbolo + ">
+            <img class="img__mas" src="/img/icons/mdi_plus-box.svg" alt="simbolo + ">
         </article>
         <div style="margin-bottom: 30px;">
             <ul>
                 <li class="tablaItems">
-                    <p>ID</p>
-                    <p>Código</p>
-                    <p>Nombre del Producto</p>
-                    <p>Categoría</p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>1</p>
-                    <p>STW001001</p>
-                    <p>Baby Yoda Blueball</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></td>
+                    <p class="tablaTitle">ID</p>
+                    <p class="tablaTitle">Código</p>
+                    <p class="tablaTitle">Nombre del Producto</p>
+                    <p class="tablaTitle">Categoría</p>
+                    <p class="tablaTitle"></p>
+                    <p class="tablaTitle"></p>
+                    <% data.forEach(item=> { %>
+                    <p class="tablaContent"><%= item.product_id %></p>
+                    <p class="tablaContent"><%= item.product_sku %></p>
+                    <p class="tablaContent"><%= item.product_name %></p>
+                    <p class="tablaContent"><%= item.licence_name %></p>
+                    <p class="img_pen"><img src="/img/icons/edit_pencil.svg" alt="icono de editar"></p>
+                    <p class="img_delete"><img src="/img/icons/delete_trash.svg" alt="icono de borrar"></td>
                     </p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>2</p>
-                    <p>STW001002</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>3</p>
-                    <p>STW001003</p>
-                    <p>Luke Skywalker & Grogu</p>
-                    <p>STAR WARS</td>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>4</p>
-                    <p>STW001004</p>
-                    <p>Stormtrooper Lightsaber</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>5</p>
-                    <p>PKM001001</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>6</p>
-                    <p>PKM001002</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>7</p>
-                    <p>PKM001003</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>8</p>
-                    <p>PKM001004</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>9</p>
-                    <p>PKM001005</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>10</p>
-                    <p>HPT001001</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>11</p>
-                    <p>HPT001002</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>12</p>
-                    <p>HPT001003</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
-                </li>
-                <li class="tablaItemsOl">
-                    <p>13</p>
-                    <p>HPT001004</p>
-                    <p>Boba Fett Fighter</p>
-                    <p>STAR WARS</p>
-                    <p class="img_pen"><img src="../../img/icons/edit_pencil.svg" alt="icono de editar"></p>
-                    <p class="img_delete"><img src="../../img/icons/delete_trash.svg" alt="icono de borrar"></p>
+                    <% }) %>
                 </li>
             </ul>
         </div>

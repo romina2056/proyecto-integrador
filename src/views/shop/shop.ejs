@@ -18,7 +18,6 @@
                         </select>
                     </form>
                 </div>
-
                 <div>
                     <p>Precio</p>
                     <form action="#" class="mayMenor">
@@ -28,7 +27,6 @@
                         <input type="search" placeholder="0" size="1" />
                     </form>
                 </div>
-
                 <div><!-- Filtro de productos -->
                     <p>Filtrar</p>
                     <form action="#" class="filtrar">
@@ -57,140 +55,43 @@
 
         <div>
             <ul class="slider__items card-item">
-               <% data.forEach(item => { %>
-                <li class="slider__item "><!-- inicio cuarta seccion primer articulo -->
-                    <article>
-                        <a class="card-item__link" href="/shop/item/<%= item.product_id %>">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="<%= item.img_front %>"
-                                    alt="figura coleccionable funko star wars trooper">
-                                <img class="card-item__img--back" src="<%= item.img_back %>"
-                                    alt="figura coleccionable funko star wars trooper box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence"><%= item.licence_name %></p>
-                                <h4 class="card-item__name"><%= item.product_name %></h4>
-                                <p class="card-item__price">$ <%= item.product_price %></p>
-                                <p class="card-item__promo"><%= item.dues %> CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li><!-- fin cuarta seccion primer articulo -->
-
- 
-<% }) %>
-                <li class="slider__item"><!-- inicio cuarta seccion segundo articulo -->
-                    <article>
-                        <a class="card-item__link" href="../../pages/shop/item.html">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp"
-                                    alt="figura coleccionable funko pokemon pidgeotto">
-                                <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp"
-                                    alt="figura coleccionable funko pokemon pidgeotto box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">POKEMON</p>
-                                <h4 class="card-item__name">PIDGEOTTO</h4>
-                                <p class="card-item__price">$ 1799,99</p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li><!-- fin cuarta seccion segundo articulo -->
-
-                <li class="slider__item"><!-- inicio cuarta seccion tercer articulo -->
-                    <article>
-                        <a class="card-item__link" href="../../pages/shop/item.html">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp"
-                                    alt="figura coleccionable funko Harru-potter luna">
-                                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp"
-                                    alt="figura coleccionable funko Harru-potter luna box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">HARRY POTTER</p>
-                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
-                                <p class="card-item__price">$ 1799,99</p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li><!-- fin cuarta seccion tercer articulo -->
-            </ul>
-
-            <ul class="slider__items card-item"><!-- inicio cuarta seccion primer articulo -->
-                <li class="slider__item ">
-                    <article>
-                        <a class="card-item__link" href="../../pages/shop/item.html">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp"
-                                    alt="figura coleccionable funko star wars trooper">
-                                <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp"
-                                    alt="figura coleccionable funko star wars trooper box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">STAR WARS</p>
-                                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
-                                <p class="card-item__price">$ 1799,99</p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li><!-- fin cuarta seccion primer articulo -->
-
-                <li class="slider__item"><!-- inicio cuarta seccion segundo articulo -->
-                    <article>
-                        <a class="card-item__link" href="../../pages/shop/item.html">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp"
-                                    alt="figura coleccionable funko pokemon pidgeotto">
-                                <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp"
-                                    alt="figura coleccionable funko pokemon pidgeotto box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">POKEMON</p>
-                                <h4 class="card-item__name">PIDGEOTTO</h4>
-                                <p class="card-item__price">$ 1799,99</p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li><!-- fin cuarta seccion segundo articulo -->
-
-                <li class="slider__item"><!-- inicio cuarta seccion tercer articulo -->
-                    <article>
-                        <a class="card-item__link" href="../../pages/shop/item.html">
-                            <picture class="card-item__cover">
-                                <span class="card-item__tag">NUEVO</span>
-                                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp"
-                                    alt="figura coleccionable funko Harru-potter luna">
-                                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp"
-                                    alt="figura coleccionable funko Harru-potter luna box">
-                            </picture>
-                            <div class="card-item__content">
-                                <p class="card-item__licence">HARRY POTTER</p>
-                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
-                                <p class="card-item__price">$ 1799,99</p>
-                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                        </a>
-                    </article>
-                </li><!-- fin cuarta seccion tercer articulo -->
+                <% data.forEach(item=> { %>
+                    <li class="slider__item "><!-- inicio cuarta seccion primer articulo -->
+                        <article>
+                            <a class="card-item__link" href="/shop/item/<%= item.product_id %>">
+                                <picture class="card-item__cover">
+                                    <span class="card-item__tag">NUEVO</span>
+                                    <img class="card-item__img--front" src="<%= item.img_front %>"
+                                        alt="<%= item.product_description %>">
+                                    <img class="card-item__img--back" src="<%= item.img_back %>"
+                                        alt="<%= item.product_description %>">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence">
+                                        <%= item.licence_name %>
+                                    </p>
+                                    <h4 class="card-item__name">
+                                        <%= item.product_name %>
+                                    </h4>
+                                    <p class="card-item__price">$ <%= item.product_price %>
+                                    </p>
+                                    <p class="card-item__promo">
+                                        <%= item.dues %> CUOTAS SIN INTERÉS
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                    </li><!-- fin cuarta seccion primer articulo -->
+                    <% }) %>
             </ul>
         </div>
     </main>
-
     <div class="pagination"><!-- Inicia el indicador de paginas de shop -->
         <button class="boton-atras">
             < </button>
-                <a href="../../index.html">1 </a>
-                <a href="../../pages/shop.html">2 </a>
-                <a href="../../pages/item.html">... </a>
+                <a href="/home">1 </a>
+                <a href="/shop">2 </a>
+                <a href="/shop/item">... </a>
                 <a href="#">9 </a>
                 <a href="#">10 </a>
                 <button class="boton-sig"> > </button>
