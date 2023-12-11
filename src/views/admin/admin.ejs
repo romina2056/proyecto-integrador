@@ -21,10 +21,10 @@
                     <p class="tablaTitle"></p>
                     <% data.forEach(item=> { %>
                     <p class="tablaContent"><%= item.product_id %></p>
-                    <p class="tablaContent"><%= item.product_sku %></p>
+                    <p class="tablaContent"><%= item.sku %></p>
                     <p class="tablaContent"><%= item.product_name %></p>
                     <p class="tablaContent"><%= item.licence_name %></p>
-                    <p class="img_pen"><img src="/img/icons/edit_pencil.svg" alt="icono de editar"></p>
+                    <p class="img_pen"><a href="/admin/edit/<%= item.product_id %>"><img src="/img/icons/edit_pencil.svg" alt="icono de editar"></a></p>
                     <p class="img_delete"><img src="/img/icons/delete_trash.svg" alt="icono de borrar"></td>
                     </p>
                     <% }) %>
