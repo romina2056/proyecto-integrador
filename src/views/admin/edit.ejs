@@ -11,20 +11,21 @@
             <form action="/admin/edit" method="post" enctype="application/x-www-form-urlencoded">
                 <label for="collection">Categoría:</label>
                 <select id="categoria" name="categoria">
-                    <option value="" disabled selected hidden>Seleccionar</option>
-                    <option value="Funkos">Figuras coleccionables</option>
-                    <option value="Llaveros">Llaveros</option>
-                    <option value="Remeras">Remeras</option>
+                    if (<%= item.category_id %>)
+                        <option value="<%= item.category_id %>" disabled selected hidden>
+                            <%= item.category_name %>
+                        </option>
                 </select>
             </form>
             <form action="#">
                 <label for="Licencia">Licencia:</label>
-                <select id="Licencia" name="Licencia">
-                    <option value="" disabled selected hidden>Seleccionar</option>
-                    <option value="starwars">Star Wars</option>
-                    <option value="pokemon">pokemon</option>
-                    <option value="harrypotter">Harry Potter</option>
+                <select id="licence" name="categoria">
+                    if (<%= item.licence_id %>)
+                        <option value="<%= item.licence_id %>" disabled selected hidden>
+                            <%= item.licence_name %>
+                        </option>
                 </select>
+               
             </form>
         </section><!-- fin de la segunda fila -->
 
@@ -36,7 +37,8 @@
         </section><!-- fin de la tercera fila -->
 
         <section><!-- inicio de la cuarta fila -->
-            <textarea class="caracteProduc" name="comentario" rows="10" cols="40"><%= item.product_description %> </textarea>
+            <textarea class="caracteProduc" name="comentario" rows="10"
+                cols="40"><%= item.product_description %> </textarea>
         </section><!-- fin de la cuarta fila -->
 
         <section style="margin-top: 19px"><!-- inicio de la quinto fila -->
@@ -46,17 +48,23 @@
                 <label class="catalogoItem" style="margin-left: 56.48px" for="precio">Precio:</label>
                 <input class="cataLog" style="max-width: 130px" type="text" name="precio" value="$<%= item.price %>">
                 <label class="catalogoItem" style="margin-left: 56.48px" for="stock:">Stock:</label>
-                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="stock:" value="<%= item.stock %>">
+                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="stock:"
+                    value="<%= item.stock %>">
             </form>
         </section><!-- fin de la quinto fila -->
 
         <section style="margin-top: 51.58px; margin-bottom: 51.58px;"><!-- inicio de la sexta fila -->
             <form action="#">
                 <label class="catalogoItem" for="descuento">Descuento:</label>
-                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="descuento" value="<%= item.discount %>%">
+                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="descuento"
+                    value="<%= item.discount %>%">
                 <label class="catalogoItem" style="margin-left: 15px" for="cuotas">Cuotas:</label>
-                <select class="selectCuotas" id="cuotas" name="Licencia">
-                    <option value="#"><%= item.dues %> Cuotas sin interés</option>
+                <select class="selectCuotas" id="cuotas" name="dues">
+                   
+                        if (<%= item.dues %>)
+                            <option value="<%= item.dues %>" disabled selected hidden>
+                                <%= item.dues %> Cuotas sin interés
+                            </option>
                     <option value="#">seleccionar</option>
                     <option value="#">seleccionar</option>
                 </select>
@@ -82,10 +90,12 @@
         </section><!-- fin de la septimo fila -->
 
         <section><!-- inicio de la octavo fila -->
-            <input class="boton" style="width: 175px;height: 44.334px; margin-bottom: 36px;" type="submit" value="Modificar Producto">
+            <input class="boton" style="width: 175px;height: 44.334px; margin-bottom: 36px;" type="submit"
+                value="Modificar Producto">
         </section><!-- fin de la octavo fila -->
     </main><!-- fin cuerpo principal -->
 
     <%- include('../partials/footerAdmin.ejs') %>
-</body>
-</html>
+        </body>
+
+        </html>

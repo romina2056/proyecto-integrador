@@ -32,3 +32,5 @@ const getOne = async (id) => {
 module.exports = {
     getAll, getOne
 }
+
+
