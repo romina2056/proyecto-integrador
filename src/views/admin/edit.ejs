@@ -10,22 +10,54 @@
         <section class="formItem"><!-- inicio de la segunda fila -->
             <form action="/admin/edit" method="post" enctype="application/x-www-form-urlencoded">
                 <label for="collection">Categoría:</label>
-                <select id="categoria" name="categoria">
-                    if (<%= item.category_id %>)
-                        <option value="<%= item.category_id %>" disabled selected hidden>
-                            <%= item.category_name %>
-                        </option>
+                <select id="categoria" name="category" required>
+                         <% if( item.category_id == 1) { %>
+                            <option value="1" selected>Figuras coleccionables</option>
+                            <option value="2">Remera</option>
+                            <option value="3">Llaveros</option>
+                        <% } %>
+                        <% if (item.category_id == 2) { %>
+                            <option value="1">Figura Coleccionables </option>
+                            <option value="2" selected> Remera </option>
+                            <option value="3">Llaveros </option>
+                        <% } %>
+                        <% if (item.category_id == 3) { %>
+                            <option value="1"> Figura Coleccionables </option>
+                            <option value="2">Remera </option>
+                            <option value="3" selected> Llaveros </option>
+                        <% } %> 
+                          
+                         
                 </select>
             </form>
             <form action="#">
                 <label for="Licencia">Licencia:</label>
-                <select id="licence" name="categoria">
-                    if (<%= item.licence_id %>)
-                        <option value="<%= item.licence_id %>" disabled selected hidden>
-                            <%= item.licence_name %>
-                        </option>
+                <select id="Licencia" name="Licencia">
+                    <% if( item.licence_id == 1) { %>
+                        <option value="1" selected>Pokemon</option>
+                        <option value="2">Star War</option>
+                        <option value="3">Harry Potter</option>
+                        <option value="4">Naruto</option>
+                    <% } %>
+                    <% if (item.licence_id == 2) { %>
+                        <option value="1">Pokemon</option>
+                        <option value="2" selected>Star War</option>
+                        <option value="3">Harry Potter</option>
+                        <option value="4">Naruto</option>
+                    <% } %>
+                    <% if (item.licence_id == 3) { %>
+                        <option value="1">Pokemon</option>
+                        <option value="2">Star War</option>
+                        <option value="3" selected>Harry Potter</option>
+                        <option value="4">Naruto</option>
+                    <% } %> 
+                    <% if (item.licence_id == 4) { %>
+                        <option value="1">Pokemon</option>
+                        <option value="2">Star War</option>
+                        <option value="3">Harry Potter</option>
+                        <option value="4" selected>Naruto</option>
+                    <% } %> 
                 </select>
-               
             </form>
         </section><!-- fin de la segunda fila -->
 
@@ -60,13 +92,16 @@
                     value="<%= item.discount %>%">
                 <label class="catalogoItem" style="margin-left: 15px" for="cuotas">Cuotas:</label>
                 <select class="selectCuotas" id="cuotas" name="dues">
-                   
-                        if (<%= item.dues %>)
-                            <option value="<%= item.dues %>" disabled selected hidden>
-                                <%= item.dues %> Cuotas sin interés
-                            </option>
-                    <option value="#">seleccionar</option>
-                    <option value="#">seleccionar</option>
+
+                    if (<%= item.dues %>)
+                        <option value="<%= item.dues %>" disabled selected hidden>
+                            <%= item.dues %> Cuotas sin interés
+                        </option>
+                    <option <% item.dues == '1' && 'selected' %>>Usted esta pagando el total </option>
+                    <option <% item.dues == '3' && 'selected' %>>3 Cuotas sin interés </option>
+                    <option <% item.dues == '6' && 'selected' %>>6 Cuotas sin interés</option>
+                    <option <% item.dues == '9' && 'selected' %>>9 Cuotas sin interés</option>
+                    <option <% item.dues == '12' && 'selected' %>>12 Cuotas sin interés</option>
                 </select>
             </form>
         </section><!-- fin de la sexta fila -->
