@@ -1,5 +1,6 @@
 const path = require('path');
-const { getAll, getOne } = require('../models/product.model');
+const { getAll, getOne, create } = require('../models/product.model');
+const { log } = require('console');
 
 const adminControllers = {
     admin: async (req, res) => {
@@ -14,22 +15,25 @@ const adminControllers = {
             title: "CREAR ITEM",
             data
         });},
-    createItem: (req, res) => {
-const product_schema ={
+    createItem: async (req, res) => {
+        const product_schema ={
     product_name: req.body.name,
-    product_description: req.body.descrption,
-    price: req.body.price,
-    stock: req.body.stock,
-    discount: req.body.discount,
+    product_description: req.body.description,
+    price: Number(req.body.price),
+    stock: Number(req.body.stock),
+    discount: Number(req.body.discount),
     sku: req.body.sku,
-    dues: req.body.dues,
-    category_id: req.body.category,
-    licence_id: req.body.licence,
+    dues: Number(req.body.dues),
     image_front: req.files[0].originalname,
-    back: req.files[1].originalname
+    image_back: req.files[1].originalname,
+    category_id: Number(req.body.category),
+    licence_id: Number(req.body.licence)
 }
 
-        res.send('Esta es la ruta para agregar un nuevo item')
+const result = await create([Object.values(product_schema)]);
+console.log("array: ", [Object.values(product_schema)]);
+console.log(result);
+res.redirect('/admin');
     },
         editView: async (req, res) =>  {
         const itemId = req.params.id;
@@ -41,6 +45,4 @@ const product_schema ={
     editDate: (req, res) => res.send('esta es la vista para realizar la modificacion'),
     delete: (req, res) => res.send('Esta es la vista para eliminar item'),
 }
-module.exports = adminControllers
-getAll,
-getOne;
+module.exports = adminControllers;

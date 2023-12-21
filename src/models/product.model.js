@@ -31,7 +31,7 @@ const getOne = async (param) => {
 }
 const create = async (params) => {
     try{
-        const [product] = await conn.query('INSERT INTO product_name, product_description, price, stock, discount, sku, dues, category_id, licence_id, imagen_front, imagen_back) VALUES?;', params);
+        const [product] = await conn.query('INSERT INTO product (product_name, product_description, price, stock, discount, sku, dues, image_front, image_back, category_id, licence_id) VALUES ?;', [params]);
         return product;
     }   catch (error){
        return{
