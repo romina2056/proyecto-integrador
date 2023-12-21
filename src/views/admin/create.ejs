@@ -1,65 +1,76 @@
 <%- include('../partials/headerAdmin.ejs') %>
 
     <main class="container"><!-- inicio cuerpo principal -->
-        <section class="create_header"><!-- Inicio primer fila -->
+        
             <h2 class="create_title">CREAR NUEVO ITEM</h2>
-        </section>
+        
 
-        <section class="first_filter"><!-- inicio de la segunda fila -->
-            <form action="#" class="filters">
-                <label for="categoria" class="filter_title">Categoría:</label>
-                <select id="categoria" name="categoria" class="filter_dropdown">
-                    <option value="#">seleccionar</option>
-                    <option value="#">seleccionar</option>
-                    <option value="#">seleccionar</option>
+        
+            <form action="/admin/create" method="post" class="filters" enctype="multipart/form-data">
+               <div class="first_filter">
+                <div >
+                    <label class="filter_title" for="categoria" >Categoría:</label>
+                <select id="categoria" name="category_id" class="filter_dropdown">
+                    <option value="1">Figuras coleccionables</option>
+                    <option value="2">Remeras</option>
+                    <option value="3">Llaveros</option>
                 </select>
-            </form>
-            <form action="#" class="filters">
-                <label for="Licencia" class="filter_title">Licencia:</label>
-                <select id="Licencia" name="Licencia" class="filter_dropdown">
-                    <option value="#">seleccionar</option>
-                    <option value="#">seleccionar</option>
-                    <option value="#">seleccionar</option>
-                </select>
-            </form>
-        </section>
 
-        <section><!-- inicio de la tercera fila -->
-            <form class="new_product" action="#">
-                <label for="nombre del producto" class="complete_title">Nombre del producto:</label>
-                <input type="text" name="producto" placeholder="Kakashi Hatake Shippuden Saga"
-                    class="to_finish margen_large" />
-            </form>
-            <textarea name="comentario" rows="10" cols="40" placeholder="Descripción de producto"
-                class="product_descrip"></textarea>
-            <form action="#">
-                <label for="sku" class="complete_title">SKU:</label>
+                </div>
+                <div class="filters">
+                    <label for="Licencia" class="filter_title">Licencia:</label>
+                <select id="Licencia" name="licence_id" class="filter_dropdown">
+                    <option value="1">Pokemon</option>
+                    <option value="2">Star War</option>
+                    <option value="3">Harry Potter</option>
+                    <option value="4">Naruto</option>
+                </select>
+
+                </div>
+               </div>
+                
+          <div >
+            <div >
+                       <label class="filter_title" for="nombre del producto" class="complete_title">Nombre del producto:</label>
+                <input class="to_finish margen_large" type="text" name="producto_name" placeholder="Kakashi Hatake Shippuden Saga"/>
+                </div>
+          </div>
+          <div >
+            <textarea class="product_descrip" name="product_description" rows="10" cols="40" placeholder="Descripción de producto"
+                ></textarea>
+          </div>
+          <div>
+            <label for="sku" class="complete_title">SKU:</label>
                 <input type="text" name="sku" placeholder="SSK111AB001" class="to_finish margen_medium" />
                 <label for="precio" class="complete_title">Precio:</label>
-                <input type="text" name="precio" placeholder="$ 0.000,00" class="to_finish margen_medium" />
+                <input type="text" name="price" placeholder="$ 0.000,00" class="to_finish margen_medium" />
                 <label for="stock:" class="complete_title">Stock:</label>
                 <input type="text" name="stock:" placeholder="0" class="to_finish margen_small" />
-            </form>
-            <form action="#">
-                <label for="descuento" class="complete_title">Descuento:</label>
-                <input type="text" name="descuento" placeholder="0%" class="to_finish margen_small" />
-                <label for="cuotas" class="complete_title">Cuotas:</label>
-                <select id="cuotas" name="Cuotas" class="way_to_pay">
-                    <option value="#">3 Cuotas sin interés</option>
-                    <option value="#">6 Cuotas sin interés</option>
-                    <option value="#">Ahora 12</option>
-                </select>
-            </form>
-            <form action="#" class="upload_image">
-                <label for="imagen" class="complete_title">Imágenes:</label>
-                <input type="file" id="imagen" name="imagen" class="files_button" multiple />
-            </form>
-        </section>
 
-        <section class="btn_add_clean"><!-- inicio de la octavo fila -->
-            <input type="submit" value="Agregar Producto" class="action_btn" />
-            <input type="reset" value="Limpiar" class="action_btn" />
-        </section>
+          </div>
+          <div >
+            <label class="complete_title" for="descuento" >Descuento:</label>
+            <input type="text" name="discount" placeholder="0%" class="to_finish margen_small" />
+            <label for="cuotas" class="complete_title">Cuotas:</label>
+            <select id="cuotas" name="dues" class="way_to_pay">
+                    <option value="1">Sin cuotas</option>
+                    <option value="3">3 Cuotas sin interés</option>
+                    <option value="6">6 Cuotas sin interés</option>
+                    <option value="9">9 Cuotas sin interés</option>
+                    <option value="12">Ahora 12</option>
+                </select>
+
+          </div>
+          
+          <div class="upload_image">
+            <label for="imagen" class="complete_title">Imágenes:</label>
+            <input type="file" name="images" class="files_button" id="img" multiple />
+          </div>
+          <div class="btn_add_clean">
+            <input type="submit" value="Agregar Producto" class="action_btn"/>
+            <input type="reset" value="Limpiar" class="action_btn"/>
+          </div> 
+    </form>
     </main><!--fin cuerpo principal-->
 
     <%- include('../partials/footerAdmin.ejs') %>

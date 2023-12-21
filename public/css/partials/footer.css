@@ -1,9 +1,15 @@
-footer nav {
+.footerFlex {
     display: flex;
     flex-flow: row-reverse;
     height: 274px;
     align-items: center;
-    gap: 968px;
+    gap: 958px;
+    
+}
+footer nav img {
+    width: 143px;
+height: 116.189px;
+flex-shrink: 0;
 }
 
 footer nav ul li {

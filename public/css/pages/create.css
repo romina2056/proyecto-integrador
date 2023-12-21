@@ -1,7 +1,4 @@
-.create_header {
-    width: 430px;
-    height: 50px;
-}
+
 
 .create_title {
     margin-top: var(--spacing-36);
@@ -9,6 +6,8 @@
     font-family: var(--alternative-font);
     font-size: var(--font-jumbo);
     font-weight: 700;
+    width: 430px;
+    height: 50px;
 }
 
 .first_filter {
@@ -117,4 +116,10 @@
     outline: none;
     width: 175px;
     height: 45px;
+    transition: all .3s ease-in-out;
+}
+
+.action_btn:hover {
+    background-color: var(--secondary-solid);
+   color: var(--light-font-solid);
 }
