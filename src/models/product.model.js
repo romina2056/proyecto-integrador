@@ -26,7 +26,7 @@ const getOne = async (param) => {
        }  
     }
    finally{
-    conn.releaseConnection()
+    conn.releaseConnection();
    }
 }
 const create = async (params) => {
@@ -40,8 +40,9 @@ const create = async (params) => {
        }  
     }
    finally{
-    conn.releaseConnection()
+    conn.releaseConnection();
    }
+}
    const deleteOne = async (params) => {
     try{
         const [product] = await conn.query('DELETE FROM product WHERE ?', params);
@@ -53,11 +54,12 @@ const create = async (params) => {
        }  
     }
    finally{
-    conn.releaseConnection()
+    conn.releaseConnection();
    }
 }
 module.exports = {
-    getAll, getOne, create, deleteOne
+    getAll,
+    getOne, 
+    create, 
+    deleteOne
 }
-
-

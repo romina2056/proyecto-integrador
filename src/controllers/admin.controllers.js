@@ -1,5 +1,5 @@
 const path = require('path');
-const { getAll, getOne, create } = require('../models/product.model');
+const { getAll, getOne, create, deleteOne } = require('../models/product.model');
 const { log } = require('console');
 
 const adminControllers = {
@@ -43,9 +43,10 @@ res.redirect('/admin');
             item
         });},
     editDate: (req, res) => res.send('esta es la vista para realizar la modificacion'),
-    delete: (req, res) => {
+    delete: async (req, res) => {
         const { id }= req.params;
-        res.send('Quiere borrar el item: ' + id);
+        await deleteOne({ product_id: id});
+       res.redirect('/admin')
     }
 }
 module.exports = adminControllers;
