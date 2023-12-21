@@ -46,7 +46,7 @@ res.redirect('/admin');
     delete: async (req, res) => {
         const { id }= req.params;
         await deleteOne({ product_id: id});
-       res.redirect('/admin')
+       res.redirect('/admin');
     }
 }
 module.exports = adminControllers;
