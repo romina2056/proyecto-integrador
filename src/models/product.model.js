@@ -42,9 +42,22 @@ const create = async (params) => {
    finally{
     conn.releaseConnection()
    }
+   const deleteOne = async (params) => {
+    try{
+        const [product] = await conn.query('DELETE FROM product WHERE ?', params);
+        return product;
+    }   catch (error){
+       return{
+        error: true,
+        message: 'hemos detectado un error:' + error
+       }  
+    }
+   finally{
+    conn.releaseConnection()
+   }
 }
 module.exports = {
-    getAll, getOne, create
+    getAll, getOne, create, deleteOne
 }
 
 
