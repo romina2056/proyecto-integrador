@@ -9,7 +9,7 @@ router.get('/create', adminControllers.create);
 router.post('/create', upload.array('images', 2), adminControllers.createItem);
 router.get('/edit/:id', adminControllers.editView);
 router.put('/edit/:id', adminControllers.editDate);
-router.delete('delete/:id', adminControllers.delete);
+router.delete('/delete/:id', adminControllers.delete);
 
 
 module.exports = router;

@@ -24,8 +24,8 @@ const adminControllers = {
     discount: Number(req.body.discount),
     sku: req.body.sku,
     dues: Number(req.body.dues),
-    image_front: req.files[0].originalname,
-    image_back: req.files[1].originalname,
+    image_front: '/products/'+req.files[0].filename,
+    image_back: '/products/'+req.files[1].filename,
     category_id: Number(req.body.category),
     licence_id: Number(req.body.licence)
 }
@@ -43,6 +43,9 @@ res.redirect('/admin');
             item
         });},
     editDate: (req, res) => res.send('esta es la vista para realizar la modificacion'),
-    delete: (req, res) => res.send('Esta es la vista para eliminar item'),
+    delete: (req, res) => {
+        const { id }= req.params;
+        res.send('Quiere borrar el item: ' + id);
+    }
 }
 module.exports = adminControllers;
