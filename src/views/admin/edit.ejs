@@ -1,117 +1,95 @@
 <%- include('../partials/headerAdmin.ejs') %>
-
     <main class="container"><!-- inicio cuerpo principal -->
-        <section><!-- Inicio de primera fila -->
-            <span class="edit-header">
-                <h2>EDITAR ITEM</h2>
-            </span>
-        </section><!-- fin de la primera fila -->
-
-        <section class="formItem"><!-- inicio de la segunda fila -->
-            <form action="/admin/edit" method="post" enctype="application/x-www-form-urlencoded">
-                <label for="collection">Categoría:</label>
-                <select id="categoria" name="category" required>
-                         <% if( item.category_id == 1) { %>
-                            <option value="1" selected>Figuras coleccionables</option>
-                            <option value="2">Remera</option>
-                            <option value="3">Llaveros</option>
+        <h2 class="create_title">EDITAR ITEM</h2>
+        <form action="/admin/edit/<%= item.product_id %>?_method=PUT" method="post" enctype="multipart/form-data">
+            <div class="first_filter">
+            <div>
+                <label class="filter_title" for="collection">Categoría:</label>
+                <select id="categoria" name="category" class="filter_dropdown" required>
+                    <% if( item.category_id==1) { %>
+                        <option value="1" selected>Figuras coleccionables</option>
+                        <option value="2">Remera</option>
+                        <option value="3">Llaveros</option>
                         <% } %>
-                        <% if (item.category_id == 2) { %>
-                            <option value="1">Figura Coleccionables </option>
-                            <option value="2" selected> Remera </option>
-                            <option value="3">Llaveros </option>
-                        <% } %>
-                        <% if (item.category_id == 3) { %>
-                            <option value="1"> Figura Coleccionables </option>
-                            <option value="2">Remera </option>
-                            <option value="3" selected> Llaveros </option>
-                        <% } %> 
-                          
-                         
+                            <% if (item.category_id==2) { %>
+                                <option value="1">Figura Coleccionables </option>
+                                <option value="2" selected> Remera </option>
+                                <option value="3">Llaveros </option>
+                                <% } %>
+                                    <% if (item.category_id==3) { %>
+                                        <option value="1"> Figura Coleccionables </option>
+                                        <option value="2">Remera </option>
+                                        <option value="3" selected> Llaveros </option>
+                                        <% } %>
                 </select>
-            </form>
-            <form action="#">
-                <label for="Licencia">Licencia:</label>
-                <select id="Licencia" name="Licencia">
-                    <% if( item.licence_id == 1) { %>
+            </div>
+            <div class="filters">
+                <label for="Licencia" class="filter_title">Licencia:</label>
+                <select class="filter_dropdown" id="Licencia" name="Licence">
+                    <% if( item.licence_id==1) { %>
                         <option value="1" selected>Pokemon</option>
                         <option value="2">Star War</option>
                         <option value="3">Harry Potter</option>
                         <option value="4">Naruto</option>
-                    <% } %>
-                    <% if (item.licence_id == 2) { %>
-                        <option value="1">Pokemon</option>
-                        <option value="2" selected>Star War</option>
-                        <option value="3">Harry Potter</option>
-                        <option value="4">Naruto</option>
-                    <% } %>
-                    <% if (item.licence_id == 3) { %>
-                        <option value="1">Pokemon</option>
-                        <option value="2">Star War</option>
-                        <option value="3" selected>Harry Potter</option>
-                        <option value="4">Naruto</option>
-                    <% } %> 
-                    <% if (item.licence_id == 4) { %>
-                        <option value="1">Pokemon</option>
-                        <option value="2">Star War</option>
-                        <option value="3">Harry Potter</option>
-                        <option value="4" selected>Naruto</option>
-                    <% } %> 
+                        <% } %>
+                            <% if (item.licence_id==2) { %>
+                                <option value="1">Pokemon</option>
+                                <option value="2" selected>Star War</option>
+                                <option value="3">Harry Potter</option>
+                                <option value="4">Naruto</option>
+                                <% } %>
+                                    <% if (item.licence_id==3) { %>
+                                        <option value="1">Pokemon</option>
+                                        <option value="2">Star War</option>
+                                        <option value="3" selected>Harry Potter</option>
+                                        <option value="4">Naruto</option>
+                                        <% } %>
+                                            <% if (item.licence_id==4) { %>
+                                                <option value="1">Pokemon</option>
+                                                <option value="2">Star War</option>
+                                                <option value="3">Harry Potter</option>
+                                                <option value="4" selected>Naruto</option>
+                                                <% } %>
                 </select>
-            </form>
-        </section><!-- fin de la segunda fila -->
-
-        <section><!-- inicio de la tercera fila -->
-            <form action="#">
-                <label for="nombre del producto" class="catalogoItem">Nombre del producto:</label>
-                <input class="catalogoItemOk" type="text" name="producto" value="<%= item.product_name %>">
-            </form>
-        </section><!-- fin de la tercera fila -->
-
-        <section><!-- inicio de la cuarta fila -->
-            <textarea class="caracteProduc" name="comentario" rows="10"
-                cols="40"><%= item.product_description %> </textarea>
-        </section><!-- fin de la cuarta fila -->
-
-        <section style="margin-top: 19px"><!-- inicio de la quinto fila -->
-            <form action="#">
-                <label class="catalogoItem" for="sku">SKU:</label>
-                <input class="cataLog" style="max-width: 130px" type="text" name="sku" value="<%= item.sku %>">
-                <label class="catalogoItem" style="margin-left: 56.48px" for="precio">Precio:</label>
-                <input class="cataLog" style="max-width: 130px" type="text" name="precio" value="$<%= item.price %>">
-                <label class="catalogoItem" style="margin-left: 56.48px" for="stock:">Stock:</label>
-                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="stock:"
-                    value="<%= item.stock %>">
-            </form>
-        </section><!-- fin de la quinto fila -->
-
-        <section style="margin-top: 51.58px; margin-bottom: 51.58px;"><!-- inicio de la sexta fila -->
-            <form action="#">
-                <label class="catalogoItem" for="descuento">Descuento:</label>
-                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="descuento"
-                    value="<%= item.discount %>%">
-                <label class="catalogoItem" style="margin-left: 15px" for="cuotas">Cuotas:</label>
-                <select class="selectCuotas" id="cuotas" name="dues">
+            </div>
+        </div>
+            <div>
+                <label for="nombre del producto" class="filter_title">Nombre del producto:</label>
+                <input class="to_finish margen_large" name="name" value="<%= item.product_name %>">
+            </div>
+            <div>
+                <textarea class="product_descrip" name="description"  rows="10" cols="40"><%= item.product_description %> </textarea>
+            </div>
+            <div >
+                <label class="complete_title" for="sku">SKU:</label>
+                <input class="to_finish margen_medium" type="text" name="sku" value="<%= item.sku %>">
+                <label class="complete_title" for="precio">Precio:</label>
+                <input class="to_finish margen_medium" type="text" name="price" value="$<%= item.price %>">
+                <label class="complete_title" for="stock:">Stock:</label>
+                <input class="to_finish margen_small" type="text" name="stock" value="<%= item.stock %>">
+            </div>
+            <div>
+                <label class="complete_title" for="descuento">Descuento:</label>
+                <input class="to_finish margen_small" type="text" name="discount" value="<%= item.discount %>%">
+                <label class="complete_title" for="cuotas">Cuotas:</label>
+                <select class="way_to_pay" id="cuotas" name="dues">
 
                     if (<%= item.dues %>)
                         <option value="<%= item.dues %>" disabled selected hidden>
                             <%= item.dues %> Cuotas sin interés
                         </option>
-                    <option <% item.dues == '1' && 'selected' %>>Usted esta pagando el total </option>
-                    <option <% item.dues == '3' && 'selected' %>>3 Cuotas sin interés </option>
-                    <option <% item.dues == '6' && 'selected' %>>6 Cuotas sin interés</option>
-                    <option <% item.dues == '9' && 'selected' %>>9 Cuotas sin interés</option>
-                    <option <% item.dues == '12' && 'selected' %>>12 Cuotas sin interés</option>
+                        <option <% item.dues=='1' && 'selected' %>>Usted esta pagando el total </option>
+                        <option <% item.dues=='3' && 'selected' %>>3 Cuotas sin interés </option>
+                        <option <% item.dues=='6' && 'selected' %>>6 Cuotas sin interés</option>
+                        <option <% item.dues=='9' && 'selected' %>>9 Cuotas sin interés</option>
+                        <option <% item.dues=='12' && 'selected' %>>12 Cuotas sin interés</option>
                 </select>
-            </form>
-        </section><!-- fin de la sexta fila -->
-
-        <section><!-- inicio de la septimo fila -->
-            <form action="#">
-                <label class="catalogoItem" for="imagen">Imágenes:</label>
-                <input type="file" id="imagen" name="imagen" multiple>
-            </form>
-            <section class="itemParaAgregar">
+            </div>
+            <div class="upload_image">
+                <label class="complete_title" for="imagen">Imágenes:</label>
+                <input type="file" id="imagen" name="images" multiple>
+            </div>
+            <div class="itemParaAgregar">
                 <article>
                     <img class="item_img_edit" src="/img<%= item.image_front %>"
                         alt="Figura de funkos de naruko de frente">
@@ -121,13 +99,11 @@
                     <img class="item_img_edit" src="/img<%= item.image_back %>">
                     <p class="descripIman">Dorso</p>
                 </article>
-            </section>
-        </section><!-- fin de la septimo fila -->
-
-        <section><!-- inicio de la octavo fila -->
-            <input class="boton" style="width: 175px;height: 44.334px; margin-bottom: 36px;" type="submit"
-                value="Modificar Producto">
-        </section><!-- fin de la octavo fila -->
+            </div>
+            <div class="btn_add_clean">
+                <input class="action_btn" type="submit" value="Modificar Producto">
+            </div>
+        </form>
     </main><!-- fin cuerpo principal -->
 
     <%- include('../partials/footerAdmin.ejs') %>
